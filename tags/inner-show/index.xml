@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inner-show | MSC</title>
+    <link>/tags/inner-show/</link>
+      <atom:link href="/tags/inner-show/index.xml" rel="self" type="application/rss+xml" />
+    <description>inner-show</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>inner-show</title>
+      <link>/tags/inner-show/</link>
+    </image>
+    
+    <item>
+      <title>External Project</title>
+      <link>/project/project2/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/project2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
