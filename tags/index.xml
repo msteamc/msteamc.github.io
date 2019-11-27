@@ -2,85 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | MSC</title>
-    <link>/tags/</link>
-      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://msteamc.github.io/tags/</link>
+      <atom:link href="https://msteamc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright with MSC </copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>Tags</title>
-      <link>/tags/</link>
+      <link>https://msteamc.github.io/tags/</link>
     </image>
     
     <item>
       <title>post</title>
-      <link>/tags/post/</link>
+      <link>https://msteamc.github.io/tags/post/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/source-themes/</guid>
+      <guid>https://msteamc.github.io/tags/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>course</title>
-      <link>/tags/course/</link>
+      <link>https://msteamc.github.io/tags/course/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/course/</guid>
+      <guid>https://msteamc.github.io/tags/course/</guid>
       <description></description>
     </item>
     
     <item>
       <title>information theory</title>
-      <link>/tags/information-theory/</link>
+      <link>https://msteamc.github.io/tags/information-theory/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/information-theory/</guid>
+      <guid>https://msteamc.github.io/tags/information-theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inner-show</title>
-      <link>/tags/inner-show/</link>
+      <link>https://msteamc.github.io/tags/inner-show/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/inner-show/</guid>
+      <guid>https://msteamc.github.io/tags/inner-show/</guid>
       <description></description>
     </item>
     
     <item>
       <title>outer-show</title>
-      <link>/tags/outer-show/</link>
+      <link>https://msteamc.github.io/tags/outer-show/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/outer-show/</guid>
+      <guid>https://msteamc.github.io/tags/outer-show/</guid>
       <description></description>
     </item>
     
     <item>
       <title>project</title>
-      <link>/tags/project/</link>
+      <link>https://msteamc.github.io/tags/project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/project/</guid>
+      <guid>https://msteamc.github.io/tags/project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>signals and systems</title>
-      <link>/tags/signals-and-systems/</link>
+      <link>https://msteamc.github.io/tags/signals-and-systems/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/signals-and-systems/</guid>
+      <guid>https://msteamc.github.io/tags/signals-and-systems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>video</title>
-      <link>/tags/video/</link>
+      <link>https://msteamc.github.io/tags/video/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/tags/video/</guid>
+      <guid>https://msteamc.github.io/tags/video/</guid>
       <description></description>
     </item>
     

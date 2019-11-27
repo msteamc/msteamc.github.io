@@ -2,30 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | MSC</title>
-    <link>/authors/</link>
-      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://msteamc.github.io/authors/</link>
+      <atom:link href="https://msteamc.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright with MSC </copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>Authors</title>
-      <link>/authors/</link>
+      <link>https://msteamc.github.io/authors/</link>
     </image>
     
     <item>
       <title></title>
-      <link>/authors/admin/</link>
+      <link>https://msteamc.github.io/authors/admin/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;MSC, Make STEM Clear, is a project to show STEM (Science, Technology, Engineering and Mathematics ) in a visualized and animated way. The main part is the Youtube Channel and the posts in this site. Any topic related with STEM maybe covered. However, there is an order. Topics related with information and communication theory, computer science and the corresponding math background will be covered first.&lt;/p&gt;
+      <guid>https://msteamc.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;MSC, Make STEAM Clear, is a project to show STEAM (Science, Technology, Engineering, Art and Mathematics ) in a visualized and animated way.&lt;/p&gt;
+
+&lt;p&gt;I hope you can be inspired by both the Youtube Channel and the contents from this site. Each video may relate several posts which detail the video by more references and examples.&lt;/p&gt;
+
+&lt;p&gt;Any topics related with STEAM maybe covered. Please feel free to leave any comments. Now that I have a scratch about the blueprint of this project, modifications is absolutely possible because of your feedback.&lt;/p&gt;
+
+&lt;p&gt;At last, It&amp;rsquo;s my great pleasure to help you feel the beauty of STEAM.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Robert Ford</title>
-      <link>/authors/robert-ford/</link>
+      <link>https://msteamc.github.io/authors/robert-ford/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/authors/robert-ford/</guid>
+      <guid>https://msteamc.github.io/authors/robert-ford/</guid>
       <description></description>
     </item>
     

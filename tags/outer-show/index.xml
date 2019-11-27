@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>outer-show | MSC</title>
-    <link>/tags/outer-show/</link>
-      <atom:link href="/tags/outer-show/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://msteamc.github.io/tags/outer-show/</link>
+      <atom:link href="https://msteamc.github.io/tags/outer-show/index.xml" rel="self" type="application/rss+xml" />
     <description>outer-show</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright with MSC </copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>outer-show</title>
-      <link>/tags/outer-show/</link>
+      <link>https://msteamc.github.io/tags/outer-show/</link>
     </image>
     
     <item>
       <title>External Project</title>
-      <link>/project/project1/</link>
+      <link>https://msteamc.github.io/project/project1/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/project1/</guid>
+      <guid>https://msteamc.github.io/project/project1/</guid>
       <description></description>
     </item>
     
