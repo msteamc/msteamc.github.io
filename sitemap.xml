@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://msteamc.github.io/courses/example2/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/example2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/example2/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://msteamc.github.io/faq/</loc>
     <lastmod>2019-11-26T00:00:00+00:00</lastmod>
   </url>
@@ -18,43 +48,28 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/project/my-workflow-of-creating-a-video/</loc>
-    <lastmod>2019-11-10T17:52:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/project/</loc>
-    <lastmod>2019-11-10T17:52:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/</loc>
-    <lastmod>2019-11-10T17:52:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/</loc>
-    <lastmod>2019-11-10T17:52:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/workflow/</loc>
-    <lastmod>2019-11-10T17:52:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://msteamc.github.io/project/how-do-i-make-a-video/</loc>
     <lastmod>2019-10-06T11:16:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/post/my-first-post/</loc>
-    <lastmod>2019-10-04T20:47:17+08:00</lastmod>
+    <loc>https://msteamc.github.io/tags/project/</loc>
+    <lastmod>2019-10-06T11:16:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/post/</loc>
-    <lastmod>2019-10-04T20:47:17+08:00</lastmod>
+    <loc>https://msteamc.github.io/project/</loc>
+    <lastmod>2019-10-06T11:16:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/tags/</loc>
+    <lastmod>2019-10-06T11:16:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/tags/workflow/</loc>
+    <lastmod>2019-10-06T11:16:00+08:00</lastmod>
   </url>
   
   <url>
@@ -64,11 +79,6 @@
   
   <url>
     <loc>https://msteamc.github.io/publication_types/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/post/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,12 +93,12 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/tags/post/</loc>
+    <loc>https://msteamc.github.io/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/publication_types/</loc>
+    <loc>https://msteamc.github.io/tags/video/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,12 +118,12 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/project/project1/</loc>
+    <loc>https://msteamc.github.io/project/project2/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/project/project2/</loc>
+    <loc>https://msteamc.github.io/project/project1/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -163,12 +173,12 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/post/journal-article/</loc>
+    <loc>https://msteamc.github.io/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/publication/journal-article/</loc>
+    <loc>https://msteamc.github.io/tags/post/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,18 +193,12 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/post/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://msteamc.github.io/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/tags/video/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <loc>https://msteamc.github.io/post/</loc>
   </url>
   
   <url>
@@ -202,7 +206,7 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/talk/</loc>
+    <loc>https://msteamc.github.io/courses/</loc>
   </url>
   
 </urlset>
