@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>title_for_all_the_course | MSC</title>
+    <title>All My Courses | MSC</title>
     <link>https://msteamc.github.io/courses/</link>
       <atom:link href="https://msteamc.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
-    <description>title_for_all_the_course</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2020</copyright>
+    <description>All My Courses</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright>
     <image>
       <url>https://msteamc.github.io/img/H-F_STEAM_Night_Logo.jpg</url>
-      <title>title_for_all_the_course</title>
+      <title>All My Courses</title>
       <link>https://msteamc.github.io/courses/</link>
     </image>
     

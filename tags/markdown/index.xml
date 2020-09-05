@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown | MSC</title>
+    <link>https://msteamc.github.io/tags/markdown/</link>
+      <atom:link href="https://msteamc.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Thu, 12 Dec 2019 07:24:00 +0800</lastBuildDate>
+    <image>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
+      <title>Markdown</title>
+      <link>https://msteamc.github.io/tags/markdown/</link>
+    </image>
+    
+    <item>
+      <title>Export Markdown and latex using Emacs Org</title>
+      <link>https://msteamc.github.io/post/export-markdown-and-latex-using-emacs-org/</link>
+      <pubDate>Thu, 12 Dec 2019 07:24:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/post/export-markdown-and-latex-using-emacs-org/</guid>
+      <description>
+
+&lt;p&gt;&lt;style&gt;
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+&lt;/style&gt;
+&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; &lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; &lt;a href=&#34;#set-up-ox-hugo&#34;&gt;set up ox-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;3&lt;/span&gt; &lt;a href=&#34;#use-org-macro-replacement&#34;&gt;use Org Macro replacement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;4&lt;/span&gt; &lt;a href=&#34;#use-the-setupfile-for-each-org-file&#34;&gt;use the setupfile for each Org file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;!--endtoc--&gt;&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    set up the Emacs org and ox-hugo to export the org files in markdown and latex format.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Introduction&lt;/h2&gt;
+
+&lt;p&gt;I use hugo before it support Emacs org file. Then I use an Emacs extension
+called &lt;a href=&#34;https://github.com/kaushalmodi/ox-hugo&#34; target=&#34;_blank&#34;&gt;ox-hugo&lt;/a&gt; which is a carefully crafted Org exporter back-end for Hugo.
+Ox-hugo meets all my requirement and definitely worth a try when you are an
+advanced user of Emacs Org. By the way, if you are quite familiar with Emacs
+Org, there is no need to take time to learn markdown. Emacs Org, I think, is
+more elegant than markdown.&lt;/p&gt;
+
+&lt;h2 id=&#34;set-up-ox-hugo&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; set up ox-hugo&lt;/h2&gt;
+
+&lt;p&gt;I use Spacemacs and integrate ox-hugo into my config is easy. You can add it
+into your private layer or just add it in your &lt;code&gt;user-config&lt;/code&gt; . Please refer to
+&lt;a href=&#34;https://github.com/kaushalmodi/ox-hugo&#34; target=&#34;_blank&#34;&gt;the repo.&lt;/a&gt; and read the document for more information.&lt;/p&gt;
+
+&lt;p&gt;The first time you want to export an Org file or a subtree of an Org file, use
+&lt;code&gt;M-x org-hugo-export-to-md&lt;/code&gt; . There will be a hugo-related section in the
+&lt;code&gt;org-dispatcher&lt;/code&gt; whenever you use &lt;code&gt;C-c C-e&lt;/code&gt; .&lt;/p&gt;
+
+&lt;h2 id=&#34;use-org-macro-replacement&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;3&lt;/span&gt; use Org Macro replacement&lt;/h2&gt;
+
+&lt;p&gt;Often, you want different actions when you export the Org file to
+hugo-compatible markdown and latex file. For example, hugo or hugo theme supports
+summary and shortcodes such as &lt;code&gt;alert note&lt;/code&gt; and &lt;code&gt;alert warning&lt;/code&gt; (see  &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Writing
+content with Markdown, LaTeX, and Shortcodes | Academic&lt;/a&gt; )&lt;/p&gt;
+
+&lt;p&gt;When you export the snippet to markdown then hugo will display the content
+according to the css. However, latex does not recognize the shortcodes. So latex
+will display &lt;code&gt;{ {% alert note %} }&lt;/code&gt; literally which is clutter. The Org Macro may
+help. For more information please refer to &lt;a href=&#34;https://orgmode.org/manual/Macro-replacement.html&#34; target=&#34;_blank&#34;&gt;The Org Manual: Macro replacement&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/fniessen/org-macros&#34; target=&#34;_blank&#34;&gt;fniessen/org-macros: Shared macros for Org mode&lt;/a&gt; . I also define my own Org Macro
+in &lt;a href=&#34;https://github.com/msteamc/.spacemacs.d/blob/master/org-templates/enpost.org&#34; target=&#34;_blank&#34;&gt;my setup file for every .org file&lt;/a&gt;. With Org Macro, I control some contents
+and options exist only for certain backend.&lt;/p&gt;
+
+&lt;p&gt;Once you are familiar with Org Macro, It behaves beyond your imagination.&lt;/p&gt;
+
+&lt;h2 id=&#34;use-the-setupfile-for-each-org-file&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;4&lt;/span&gt; use the setupfile for each Org file&lt;/h2&gt;
+
+&lt;p&gt;Often, you options for a org file grows more and more. If you think it kind of
+clutter at the top of your Org files, you can group them in a setupfile then
+include it at the top of your Org file.&lt;/p&gt;
+
+&lt;p&gt;For my setupfiles, please refer to &lt;a href=&#34;https://github.com/msteamc/.spacemacs.d/tree/master/org-templates&#34; target=&#34;_blank&#34;&gt;my org-templates&lt;/a&gt;. As you can see, I have
+several setupfiles for different aims. To include one of them in my Org file, I
+use:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#+SETUPFILE: &amp;lt;path+name of the setup files&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;By using &lt;code&gt;#+SETUPFILE&lt;/code&gt; ,I only have to option lines at the top of my org file.
+So it looks clean.&lt;/p&gt;
+
+&lt;p&gt;Also, you can notice that in &lt;a href=&#34;https://github.com/msteamc/.spacemacs.d/blob/master/org-templates/enpost.org&#34; target=&#34;_blank&#34;&gt;my setupfile named enpost.org&lt;/a&gt; exists options for
+different export targets.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

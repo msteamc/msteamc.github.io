@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="MSC">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This post collects working examples of drawing graphs using TikZ in Emacs Org">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(151,13,22)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.2cffbf0bd96b559cc5797a48e806a1e1.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.8e161b50807e623d07d145dfe3927b61.css">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/">
+
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@makesteamclear">
+  <meta property="twitter:creator" content="@makesteamclear">
+  
+  <meta property="og:site_name" content="MSC">
+  <meta property="og:url" content="https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/">
+  <meta property="og:title" content="Drawing Graphs Using TikZ in Emacs Org | MSC">
+  <meta property="og:description" content="This post collects working examples of drawing graphs using TikZ in Emacs Org"><meta property="og:image" content="https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/featured.jpg">
+  <meta property="twitter:image" content="https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-12-13T22:10:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-12-13T22:10:00&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/"
+  },
+  "headline": "Drawing Graphs Using TikZ in Emacs Org",
+  
+  "image": [
+    "https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/featured.jpg"
+  ],
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "2019-12-13T22:10:00+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "MSC"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MSC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://msteamc.github.io/img/icon-32.png"
+    }
+  },
+  "description": "This post collects working examples of drawing graphs using TikZ in Emacs Org"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Drawing Graphs Using TikZ in Emacs Org | MSC</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/icon-32.png" alt="MSC"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_videos"><span>Videos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/support/"><span>Supports</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/faq/"><span>FAQ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/landing/"><span>landing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>MyCoursess</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Drawing Graphs Using TikZ in Emacs Org</h1>
+
+  
+
+  
+
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 13, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/drawing-graphs-using-tikz-in-emacs-org/#disqus_thread"></a>
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/&amp;text=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/&amp;t=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org&amp;body=https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/&amp;title=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org%20https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://msteamc.github.io/post/drawing-graphs-using-tikz-in-emacs-org/&amp;title=Drawing%20Graphs%20Using%20TikZ%20in%20Emacs%20Org" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/#" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="/#" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="/#" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 436px;">
+  <div style="position: relative">
+    <img src="/post/drawing-graphs-using-tikz-in-emacs-org/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<p><style>
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+</style>
+<div class="ox-hugo-toc toc">
+<div></div></p>
+
+<div class="heading">Table of Contents</div>
+
+<ul>
+<li><span class="section-num">1</span> <a href="#drawing-a-tikz-picture-in-emacs-org-mode">Drawing a TikZ picture in Emacs Org Mode</a></li>
+<li><span class="section-num">2</span> <a href="#another-example">Another Example</a></li>
+<li><span class="section-num">3</span> <a href="#some-basic-rules-in-tikz">Some Basic Rules in TikZ</a></li>
+<li><span class="section-num">4</span> <a href="#some-tips-for-in-tikz">Some tips for in TikZ</a></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
+<h2 id="drawing-a-tikz-picture-in-emacs-org-mode"><span class="section-num">1</span> Drawing a TikZ picture in Emacs Org Mode</h2>
+
+<p><a id="code-snippet--a-minimum-working-example"></a>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\usetikzlibrary</span>{intersections,arrows.meta}
+<span style="color:#66d9ef">\begin</span>{tikzpicture}[thin]
+<span style="color:#66d9ef">\draw</span> (-1.5,0) -- (1.5,0);
+<span style="color:#66d9ef">\draw</span> (0,-1.5) -- (0,1.5);
+<span style="color:#66d9ef">\filldraw</span><span style="color:#a6e22e">[fill = green!20, draw = green!50!black]</span> (0,0) circle[radius = 1cm];
+<span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[help lines,very thin,step=.5cm,color=gray]</span> (-1.5,-1.5) grid (1.5,1.5);
+<span style="color:#66d9ef">\draw</span> (0,0) rectangle (.5,.5);
+<span style="color:#66d9ef">\draw</span> (0,0) rectangle (-0.5,-0.5);
+<span style="color:#75715e">% relative coordinate
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[blue, very thick]</span> (30:1) ++ (0,-0.5) --(0,0);
+<span style="color:#75715e">% name a path without drawing it
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\path</span><span style="color:#a6e22e">[name path = upward line]</span> (1,0) -- (1,1);
+<span style="color:#66d9ef">\path</span><span style="color:#a6e22e">[name path = sloped line]</span> (0,0) -- (30:1.5cm);
+<span style="color:#75715e">% use intersection of two path
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[name intersections={of = upward line and sloped line, by=x}]</span>
+     [very thick, orange] (1,0) -- (x);
+<span style="color:#75715e">% use arrow
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[&lt;-&gt;&gt;]</span> (0,0) -- (145:1);
+<span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[&lt;-{Triangle[fill=red]</span>}] (0,0) -- (30:1);
+<span style="color:#75715e">% use scope
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\begin</span>{scope}[very thick]
+<span style="color:#66d9ef">\draw</span> (-0.4,0.4) -- (0.4,0.4);
+<span style="color:#66d9ef">\draw</span> (-0.4,-0.4) -- (0.4,-0.4);
+<span style="color:#66d9ef">\end</span>{scope}
+<span style="color:#75715e">% use foreach
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\foreach</span> <span style="color:#66d9ef">\x</span> in {-1cm,-0.5cm,1cm}
+    <span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[red]</span> (<span style="color:#66d9ef">\x</span>,-3pt) -- (<span style="color:#66d9ef">\x</span>,3pt);
+<span style="color:#66d9ef">\foreach</span> <span style="color:#66d9ef">\y</span> in {-1cm,-0.5cm,1cm}
+    <span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[red]</span>(-3pt,<span style="color:#66d9ef">\y</span>) -- (3pt,<span style="color:#66d9ef">\y</span>);
+<span style="color:#75715e">% using node
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\draw</span> (0,0)+(0.2,-0.2) node {<span style="color:#66d9ef">\tiny</span> <span style="color:#e6db74">$</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span><span style="color:#f92672">)</span><span style="color:#e6db74">$</span> };
+<span style="color:#66d9ef">\end</span>{tikzpicture}</code></pre></td></tr></table>
+</div>
+</div></p>
+
+<div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--a-minimum-working-example">Code Snippet 1</a></span>:
+  a minimum working example
+</div>
+
+<p><br>
+The generated figure is shown as:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/example3.png" >
+<img src="/img/tikz/example3.png" alt="" width="800" ></a>
+
+
+
+</figure>
+
+
+<ol>
+<li>In <a href="#code-snippet--a-minimum-working-example">the minimum working example</a> line 12 , a path is named  without drawing
+it.</li>
+<li>Line 16 gives an example of using library <code>intersections</code>. Note
+that you need to add the library using <code>\usetikzlibrary{intersections}</code>
+otherwise an error occurs during \LaTeX compiling.</li>
+<li>Line 18 and 19 gives an example of using arrow. To make it work,
+<code>\usetikzlibrary{arrows.meta}</code> is needed. The library <code>arrows.meta</code> provides tons
+of types of arrows whick shock me when I see them the first time.</li>
+<li>Line 21 to 24 gives an example of <code>scope</code> . In the environment, all
+the lines are drawn in the <code>very thick</code> style.</li>
+<li>Line 26 to 29 gives an examplt of <code>foreach</code> . <code>foreach</code> is handy
+when you want to draw a list of objects. In <a href="#code-snippet--a-minimum-working-example">the minimum working example</a> , I
+draw a list of short red sticks along with the x-axis and y-axis.</li>
+<li>Line 31 is an example of <code>node</code>. The keyword <code>node</code> is typically followed by
+some options between <code>[]</code> and then some text between <code>{}</code>. Every node has flexible
+anchor options to decide where the text should be placed.</li>
+</ol>
+
+<h2 id="another-example"><span class="section-num">2</span> Another Example</h2>
+
+<p>The code is shown as:</p>
+
+<p><a id="code-snippet--another-minimum-working-example"></a>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\usetikzlibrary</span>{intersections,arrows.meta}
+<span style="color:#66d9ef">\begin</span>{tikzpicture}[scale=3]
+  <span style="color:#66d9ef">\clip</span> (-0.6,-0.2) rectangle (0.6,1.51);
+  <span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[step = .5cm, help lines]</span> (-1.4,-1.4) grid (1.4,1.4);
+  <span style="color:#66d9ef">\filldraw</span><span style="color:#a6e22e">[fill=green!20,draw = green!50!black]</span> (0,0) -- (3mm,0mm)
+  arc [start angle = 0, end angle = 30,radius = 3mm] -- cycle;
+  <span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[-&gt;]</span> (-1.5,0) -- (1.5,0);
+  <span style="color:#66d9ef">\draw</span><span style="color:#a6e22e">[-&gt;]</span> (0,-1.5) -- (0,1.5);
+  <span style="color:#66d9ef">\draw</span> (0,0) circle [radius=1cm];
+  <span style="color:#66d9ef">\foreach</span> <span style="color:#66d9ef">\x</span> in {-1,-0.5,1}
+  <span style="color:#66d9ef">\draw</span>(<span style="color:#66d9ef">\x</span> cm, 1pt) -- (<span style="color:#66d9ef">\x</span> cm, -1 pt) node [anchor = north] {<span style="color:#e6db74">$</span>\x<span style="color:#e6db74">$</span>};
+  <span style="color:#66d9ef">\foreach</span> <span style="color:#66d9ef">\y</span> in {-1,-0.5,1}
+  <span style="color:#66d9ef">\draw</span>(1pt,<span style="color:#66d9ef">\y</span> cm) -- (-1pt, <span style="color:#66d9ef">\y</span> cm) node[anchor = east] {<span style="color:#e6db74">$</span>\y<span style="color:#e6db74">$</span>};
+<span style="color:#66d9ef">\end</span>{tikzpicture}</code></pre></td></tr></table>
+</div>
+</div></p>
+
+<div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--another-minimum-working-example">Code Snippet 2</a></span>:
+  another minimum working example
+</div>
+
+<p>The generated figure is shown as:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/example4.png" >
+<img src="/img/tikz/example4.png" alt="" width="800" ></a>
+
+
+
+</figure>
+
+
+<h2 id="some-basic-rules-in-tikz"><span class="section-num">3</span> Some Basic Rules in TikZ</h2>
+
+<ol>
+<li><p>The options appear in <code>[]</code>. No matter it is an object or an operation, the
+contents in the following  <code>[]</code> serve as options.</p>
+
+<p>Options <code>[]</code> can be at the very beginning of the environment <code>tikzpicture</code>
+following the operation, following the object.</p></li>
+
+<li><p><code>\filldraw</code> is a good command. It draws a closed loop and fill it with color or
+pattern. The colors for filling and drawing can be different.</p></li>
+
+<li><p>Coordinates can be specified in x-y format, polar format.</p>
+
+<ul>
+<li>The easiest way is <code>(x,y)</code> which means <code>x</code> cm in the x-axis and <code>y</code> cm in the
+y-axis;</li>
+<li><code>(a:x)</code> is the polar format which means <code>x</code> cm in direction <code>a</code> degree.</li>
+</ul></li>
+
+<li><p><code>(&lt;p&gt; |- &lt;q&gt;)</code> is another way to specify coordinates for example <code>(30:1 |- 0,0)</code>
+which means the interaction of a vertical line through <code>(30:1)</code> and a
+horizontal line through <code>(0,0)</code> .</p></li>
+
+<li><p>Relative coordinates are possible with <code>+</code> and <code>++</code> in front of <code>(x,y)</code> and <code>(a:x)</code> .
+<code>+</code> is relative to the closest coordinate whereas <code>++</code> is relative to the very
+first coordinate of current path.</p></li>
+</ol>
+
+<h2 id="some-tips-for-in-tikz"><span class="section-num">4</span> Some tips for in TikZ</h2>
+
+<ol>
+<li>To use <code>intersections</code> to specify a coordinate, you need to include the
+library, i.e. <code>\usetikzlibrary{intersections}</code> is a must.</li>
+</ol>
+
+<!--listend-->
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+  <span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+  printf();
+}</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>&lt;~/Dropbox/research_library/zcl.bib&gt;</p>
+
+    </div>
+
+    
+
+
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_29552_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/admin/">MSC</a></h5>
+      <h6 class="card-subtitle">Make STEAM Clear</h6>
+      <p class="card-text">I post articles and make videos about STEAM and try to explain the concepts in a more approachable and beautiful way. <a href="https://msteamc.github.io" target="_blank">makesteamclear</a></p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:makesteamclear@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/makesteamclear" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/msteamc" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://facebook.com/makesteamclear" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://instagram.com/makesteamclear" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://reddit.com/user/makesteamclear" target="_blank" rel="noopener">
+        <i class="fab fa-reddit"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.weibo.com/u/7312259099" target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.youtube.com/makesteamclear" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/set-up-the-tikz-in-emacs-org/" rel="next">Set up the TikZ in Emacs Org</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/export-markdown-and-latex-using-emacs-org/" rel="prev">Export Markdown and latex using Emacs Org</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  
+    
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js" integrity="sha256-0w92bcB21IY5+rGI84MGj52jNfHNbXVeQLrZ0CGdjNY=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/matlab.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/c.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/elisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/lisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/shell.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/latex.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key="></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.84d185001460a90007fb2f6dcc66616e.js"></script>
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         tex2jax: {
+             inlineMath: [['$','$'], ['\\(','\\)']] },
+         displayMath: [['$$','$$'], ['\\[','\\]']],
+         displayAlign: "center",
+         displayIndent: "0em",
+         "HTML-CSS": { scale: 100,
+                       linebreaks: { automatic: "false" },
+                       webFont: "TeX"
+         },
+         SVG: {scale: 100,
+               linebreaks: { automatic: "false" },
+               font: "TeX"},
+         NativeMML: {scale: 100},
+         TeX: { equationNumbers: {autoNumber: "AMS"},
+                MultLineWidth: "90%",
+                TagSide: "right",
+                TagIndent: ".8em"
+         }
+     });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    
+
+
+<footer class="footer-section bg-with-black">
+    <div class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/logo2.png" alt="">
+                        <ul class="fta-list">
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Finacial Planning</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Investments Management</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Contact Us</h3>
+                        <ul class="fta-list">
+                            <li>Address: 8th floor, 379 Hudson St, New York, NY 10018</li>
+                            <li>Phone: (+1) 96 716 6879</li>
+                            <li>Email: contact@site.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<footer>
+    
+
+    <p class="powered-by">
+        &copy; MSC, 2019-2020, All rights reserved &middot; 
+
+        
+        <span class="float-right" aria-hidden="true">
+            <a href="#" class="back-to-top">
+                <span class="button_icon">
+                    <i class="fas fa-chevron-up fa-2x"></i>
+                </span>
+            </a>
+        </span>
+        
+    </p>
+
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

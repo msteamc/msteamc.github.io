@@ -1,0 +1,2918 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="MSC">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="1 Problem 1.1  Problem 1.1: Express each of the following complex numbers in Cartesian form \(x&#43;iy\):
+\begin{equation*} \begin{array}{ccc} \frac{1}{2}e^{i\pi} &amp; \frac{1}{2}e^{-i\pi} &amp; e^{i\pi/2} \\
+e^{-i\pi/2} &amp; e^{i5\pi/2} &amp; \sqrt{2}e^{i\pi/4} \\
+\sqrt{2}e^{i9\pi/4} &amp; \sqrt{2}e^{-i9\pi/4} &amp; \sqrt{2} e^{-i\pi/4} \end{array} \end{equation*}
+
+First, let&rsquo;s figure them out using the Euler&rsquo;s formula. For the nine complex numbers in Problem 1.1, we have:
+\begin{eqnarray*} \tfrac{1}{2} e^{i\pi } &amp;=&amp; \tfrac{1}{2} (\cos(\pi) &#43; i\sin(\pi) ) = \tfrac{1}{2} \cos(\pi) = -\tfrac{1}{2} \\">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(151,13,22)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.2cffbf0bd96b559cc5797a48e806a1e1.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.8e161b50807e623d07d145dfe3927b61.css">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@makesteamclear">
+  <meta property="twitter:creator" content="@makesteamclear">
+  
+  <meta property="og:site_name" content="MSC">
+  <meta property="og:url" content="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">
+  <meta property="og:title" content="solution of chapter 1 problems 1.1-1.20 | MSC">
+  <meta property="og:description" content="1 Problem 1.1  Problem 1.1: Express each of the following complex numbers in Cartesian form \(x&#43;iy\):
+\begin{equation*} \begin{array}{ccc} \frac{1}{2}e^{i\pi} &amp; \frac{1}{2}e^{-i\pi} &amp; e^{i\pi/2} \\
+e^{-i\pi/2} &amp; e^{i5\pi/2} &amp; \sqrt{2}e^{i\pi/4} \\
+\sqrt{2}e^{i9\pi/4} &amp; \sqrt{2}e^{-i9\pi/4} &amp; \sqrt{2} e^{-i\pi/4} \end{array} \end{equation*}
+
+First, let&rsquo;s figure them out using the Euler&rsquo;s formula. For the nine complex numbers in Problem 1.1, we have:
+\begin{eqnarray*} \tfrac{1}{2} e^{i\pi } &amp;=&amp; \tfrac{1}{2} (\cos(\pi) &#43; i\sin(\pi) ) = \tfrac{1}{2} \cos(\pi) = -\tfrac{1}{2} \\"><meta property="og:image" content="https://msteamc.github.io/img/icon-32.png">
+  <meta property="twitter:image" content="https://msteamc.github.io/img/icon-32.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-02-08T20:11:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-02-08T20:11:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>solution of chapter 1 problems 1.1-1.20 | MSC</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/icon-32.png" alt="MSC"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_videos"><span>Videos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/support/"><span>Supports</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/faq/"><span>FAQ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/landing/"><span>landing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>MyCoursess</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/">solution manual of signals and systems by Oppenheim</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">chapter 1</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">1.1-1.20</a>
+      </li>
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/">1.21-1.31</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/example2/">chapter 1 advanced problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example2/">Tips 3-5</a>
+      </li>
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example3/">Tips 3-7</a>
+      </li>
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example4/">Tips 3-8</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/example1/">chapter 1 basic problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example1/">Tips 3-4</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/chapter-1-basic-prolems/">chapter 6 advanced problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/chapter-1-basic-prolems/">solutions to basic problems in chapter 1 4</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#problem-1-dot-1"><span class="section-num">1</span> Problem 1.1</a></li>
+<li><a href="#problem-1-dot-2"><span class="section-num">2</span> Problem 1.2</a></li>
+<li><a href="#problem-1-dot-3"><span class="section-num">3</span> Problem 1.3</a>
+<ul>
+<li><a href="#problem1-dot-3a--mathbf-a--x-1--t--e-2t-u--t"><span class="section-num">3.1</span> Problem1.3a \(\mathbf{(a)}: x_{1}(t)= e^{-2t}u(t)\)</a></li>
+<li><a href="#problem1-dot-3b--mathbf-b--x-2--t--e-i--2t-plus-pi-4"><span class="section-num">3.2</span> Problem1.3b \(\mathbf{(b)}: x_{2}(t)= e^{i(2t+\pi/4)}\)</a></li>
+<li><a href="#problem-1-dot-3c--mathbf-c--x-3--t--cos--t"><span class="section-num">3.3</span> Problem 1.3c \(\mathbf{( c)}:x_{3}(t)=\cos(t)\)</a></li>
+<li><a href="#problem-1-dot-3d--mathbf-d--quad-x-1-n--tfrac-1-2--n-u-n"><span class="section-num">3.4</span> Problem 1.3d \(\mathbf{(d):} \quad x_{1}[n] = (\tfrac{1}{2})^{n} u[n]\)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-4"><span class="section-num">4</span> Problem 1.4</a>
+<ul>
+<li><a href="#problem-1-dot-4a--mathbf-a--x-n-3"><span class="section-num">4.1</span> Problem 1.4a \(\mathbf{(a)}:x[n-3]\)</a></li>
+<li><a href="#problem-1-dot-4b--mathbf-b--x-n-plus-4"><span class="section-num">4.2</span> Problem 1.4b \(\mathbf{(b)}:x[n+4]\)</a></li>
+<li><a href="#problem-1-dot-4c--mathbf-c--x-n"><span class="section-num">4.3</span> Problem 1.4c \(\mathbf{( c)}: x[-n]\)</a></li>
+<li><a href="#problem-1-dot-4d--mathbf-d--x-n-plus-2"><span class="section-num">4.4</span> Problem 1.4d \(\mathbf{(d)}: x[-n+2]\)</a></li>
+<li><a href="#problem-1-dot-4e--mathbf-e--x-n-2"><span class="section-num">4.5</span> Problem 1.4e \(\mathbf{(e)}: x[-n-2]\)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-5"><span class="section-num">5</span> Problem 1.5</a></li>
+<li><a href="#problem-1-dot-6"><span class="section-num">6</span> Problem 1.6</a></li>
+<li><a href="#problem-1-dot-7"><span class="section-num">7</span> Problem 1.7</a>
+<ul>
+<li><a href="#problem-1-dot-7a--mathbf-a--x-1-n-u-n-u-n-4"><span class="section-num">7.1</span> Problem 1.7a \(\mathbf{(a)}: x_{1}[n] = u[n] - u[n-4] \)</a></li>
+<li><a href="#problem-1-dot-7b--mathbf-b--x-2--t--sin--tfrac-1-2-t"><span class="section-num">7.2</span> Problem 1.7b \(\mathbf{(b)}: x_{2}(t) = \sin(\tfrac{1}{2} t) \)</a></li>
+<li><a href="#problem-1-dot-7c--mathbf-c--x-3-n--frac-1-2--n-u-n-3"><span class="section-num">7.3</span> Problem 1.7c \(\mathbf{( c)}: x_{3}[n] = ( \frac{1}{2} )^{n} u[n-3] \)</a></li>
+<li><a href="#problem-1-dot-7d--mathbf-d--x-4--t--e-5t-u--t-plus-2"><span class="section-num">7.4</span> Problem 1.7d \(\mathbf{(d)}: x_{4}(t) = e^{-5t}u(t+2) \)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-8"><span class="section-num">8</span> Problem 1.8</a></li>
+<li><a href="#problem-1-dot-9"><span class="section-num">9</span> Problem 1.9</a></li>
+<li><a href="#problem-1-dot-10"><span class="section-num">10</span> Problem 1.10</a></li>
+<li><a href="#problem-1-dot-11"><span class="section-num">11</span> Problem 1.11</a></li>
+<li><a href="#problem-1-dot-12"><span class="section-num">12</span> Problem 1.12</a></li>
+<li><a href="#problem-1-dot-13"><span class="section-num">13</span> Problem 1.13</a></li>
+<li><a href="#problem-1-dot-14"><span class="section-num">14</span> Problem 1.14</a></li>
+<li><a href="#problem-1-dot-15"><span class="section-num">15</span> Problem 1.15</a>
+<ul>
+<li><a href="#s-1--is-followed-by--s-2"><span class="section-num">15.1</span> \(S_{1}\) is followed by \(S_{2}\)</a></li>
+<li><a href="#s-2--is-followed-by--s-1"><span class="section-num">15.2</span> \(S_{2}\) is followed by \(S_{1}\)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-16"><span class="section-num">16</span> Problem 1.16</a></li>
+<li><a href="#problem-1-dot-17"><span class="section-num">17</span> Problem 1.17</a></li>
+<li><a href="#problem-1-dot-18"><span class="section-num">18</span> Problem 1.18</a>
+<ul>
+<li><a href="#linearity"><span class="section-num">18.1</span> linearity</a></li>
+<li><a href="#time-invariant"><span class="section-num">18.2</span> time invariant</a></li>
+<li><a href="#find--c"><span class="section-num">18.3</span> find \(C\)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-19"><span class="section-num">19</span> Problem 1.19</a>
+<ul>
+<li><a href="#problem-1-dot-19a--mathbf-a--y--t--t-2-x--t-1"><span class="section-num">19.1</span> Problem 1.19a  \(\mathbf{(a)}: y(t)= t^{2} x(t-1) \)</a></li>
+<li><a href="#problem-1-dot-19b--mathbf-b--y-n-x-2-n-2"><span class="section-num">19.2</span> Problem 1.19b  \(\mathbf{(b)}: y[n]= x^{2}[n-2] \)</a></li>
+<li><a href="#problem-1-dot-19c--mathbf-c--y-n-x-n-plus-1-x-n-1"><span class="section-num">19.3</span> Problem 1.19c \(   \mathbf{( c)}: y[n]= x[n+1] - x[n-1] \)</a></li>
+<li><a href="#problem-1-dot-19d--mathbf-d--y--t--mathrm-odd-x--t"><span class="section-num">19.4</span> Problem 1.19d \(     \mathbf{(d)}: y(t)= \mathrm{Odd}\{ x(t) \}\)</a></li>
+</ul></li>
+<li><a href="#problem-1-dot-20"><span class="section-num">20</span> Problem 1.20</a>
+<ul>
+<li><a href="#x-1-t--cos--2t"><span class="section-num">20.1</span> \(x_{1}(t) = \cos(2t)\)</a></li>
+<li><a href="#x-2-t--cos--2t-frac-1-2"><span class="section-num">20.2</span> \(x_{2}(t) = \cos(2(t-\frac{1}{2}))\)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>solution of chapter 1 problems 1.1-1.20</h1>
+
+          <div class="article-style">
+            
+
+<h2 id="problem-1-dot-1"><span class="section-num">1</span> Problem 1.1</h2>
+
+<div class="prob" id="prob11">
+  <div></div>
+
+<p>Problem 1.1: Express each of the following complex numbers in <em>Cartesian</em> form \(x+iy\):</p>
+
+<p>\begin{equation*}
+\begin{array}{ccc}
+ \frac{1}{2}e^{i\pi}  &amp; \frac{1}{2}e^{-i\pi}  &amp; e^{i\pi/2}  \\<br />
+ e^{-i\pi/2}         &amp; e^{i5\pi/2}  &amp; \sqrt{2}e^{i\pi/4}  \\<br />
+ \sqrt{2}e^{i9\pi/4} &amp; \sqrt{2}e^{-i9\pi/4}  &amp; \sqrt{2} e^{-i\pi/4}
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>First, let&rsquo;s figure them out using the Euler&rsquo;s formula. For the nine complex
+numbers in  <a href="#orgee29edb">Problem 1.1</a>, we have:</p>
+
+<p>\begin{eqnarray*}
+\tfrac{1}{2} e^{i\pi } &amp;=&amp;  \tfrac{1}{2} (\cos(\pi) + i\sin(\pi) ) = \tfrac{1}{2} \cos(\pi) = -\tfrac{1}{2} \\<br />
+\tfrac{1}{2} e^{-i\pi} &amp;=&amp; \tfrac{1}{2}  (\cos(-\pi) + i\sin(-\pi) ) = \tfrac{1}{2} \cos(-\pi) = -\tfrac{1}{2} \\<br />
+e^{i\pi/2} &amp;=&amp; \cos(\pi/2) + i \sin(\pi/2) = i \\<br />
+e^{-i\pi/2} &amp;=&amp; \cos(-\pi/2) + i \sin(-\pi/2) = -i \\<br />
+e^{i5\pi/2} &amp;=&amp; \cos(5\pi/2) + i \sin(5\pi/2) = \cos(2\pi + \pi/2) + i \sin(2\pi + \pi/2) = i \sin(\pi/2) = i \\<br />
+\sqrt{2}e^{i\pi/4} &amp;=&amp; \sqrt{2} ( \cos(\pi/4) + i \sin(\pi/4) ) = \sqrt{2} ( \tfrac{\sqrt{2}}{2} + i\tfrac{\sqrt{2}}{2}  ) = 1 + i \\<br />
+ \sqrt{2} e^{i9 \pi/4} &amp;=&amp; \sqrt{2} ( \cos(9\pi/4) + i \sin(9\pi/4) ) = 1 + i \\<br />
+ \sqrt{2} e^{-i9 \pi/4} &amp;=&amp; \sqrt{2} ( \cos(-9\pi/4) + i \sin(-9\pi/4) ) = 1 - i \\<br />
+ \sqrt{2} e^{-i \pi/4} &amp;=&amp; \sqrt{2} ( \cos(-\pi/4) + i \sin(-\pi/4) ) = 1 - i
+\end{eqnarray*}</p>
+
+<h2 id="problem-1-dot-2"><span class="section-num">2</span> Problem 1.2</h2>
+
+<div class="prob" id="prob12">
+  <div></div>
+
+<p>Problem 1.2: Express each of the following complex numbers in <em>polar</em> form (\(re^{i\theta},
+ -\pi &lt; \theta \leq \pi\)):</p>
+
+<p>\begin{equation*}
+\begin{array}{c{3cm}c{3cm}c{3cm}}
+5 &amp; -2 &amp; -3i \\<br />
+\frac{1}{2} - i \frac{\sqrt{3}}{2} &amp; 1+i &amp; (1-i)^{2} \\<br />
+i(1-i)  &amp; \frac{1+i}{1-i}  &amp; \frac{\sqrt{2} + i \sqrt{2}}{1+i\sqrt{3}}
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>For the nine complex numbers in  <a href="#orga79b87d">Problem 1.2</a> , we have:</p>
+
+<p>\begin{eqnarray*}
+ 5 &amp;=&amp; 5 e^{i0} = 5 e^{i(2\pi n)}, n\in \{\ldots, -2,-1,0,1,2,\ldots \} \\<br />
+ -2 &amp;=&amp; 2 e^{i\pi} = -2 e^{i0} \\<br />
+ -3i &amp;=&amp; 3 e^{-i\pi} \\<br />
+ \tfrac{1}{2} - i \tfrac{\sqrt{3}}{2}  &amp;=&amp; e^{-i\pi/3} \\<br />
+ 1+i &amp;=&amp; \sqrt{2} e^{i\pi/4} \\<br />
+ (1-i)^{2} &amp;=&amp; ( \sqrt{2} e^{-i\pi/4} )^{2} = 2 e^{-i\pi/2} \\<br />
+ i(1-i) &amp;=&amp; 1 - i = \sqrt{2} e^{-i\pi/4} \\<br />
+ \tfrac{1+i}{1-i} &amp;=&amp; \tfrac{ \sqrt{2}e^{i\pi/4} } { \sqrt{2}e^{-i\pi/4} } = e^{i\pi/2} \\<br />
+ \tfrac{\sqrt{2} + i \sqrt{2}}{1+i\sqrt{3}} &amp;=&amp; \tfrac{ 2e^{i\pi/4} }{ 2 e^{i\pi/3} } = e^{-i\pi/12}
+\end{eqnarray*}</p>
+
+<p>Every complex number \(a+ib\) can be visualized in the complex plane
+\(\mathbb{C}\). It can be viewed either as the point with the coordinate
+\((a,b)\) or as a vector starting from \(( 0,0 )\) to the point \((a,b)\).</p>
+
+<p>Also every complex number \(a+ib\) can be represented in the exponential form
+conveniently by using the Euler&rsquo;s formula \(e^{i\alpha} = \cos\alpha +
+ i\sin\alpha\). One complex number have unique Cartesian form but many
+expoential forms. Taking \(1+i\) for example, its expoential form can be
+\(\sqrt{2}e^{i(\pi/4 + 2n\pi)}, n\in \{ \ldots, -2,-1,0,1,2,\ldots \}\). When
+we express a complex number in expoential form, it helps to keep a concept of
+rotation in mind. In the complex plane \(\mathbb{C}\), a complex number will
+return to itself if it rotates a multiple of \(2\pi\) around the origin point
+with radius equal to its modulus. please keep the concept of roatation in mind
+and it will become increasingly important during our later study.</p>
+
+<p>In the development of complex analysis, \(a+ib\) has another form \(r\angle
+ \theta\), where \(r\) is the modulus and \(\theta\) the argument (or the
+angle). Obviously, this notation is not as good as the expoential form,
+espacialy when we want to do complex analysis such as differentiation and
+integration. We just mention it here for the sake of completion. The expoential
+form will be deployed from now on.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/eulerEquation.png" >
+<img src="/img/tikz/eulerEquation.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Now, let&rsquo;s go back to <a href="#orgee29edb">Problem 1.1</a> and Problem <a href="#orga79b87d">Problem
+1.2</a>. It&rsquo;s easy to figure the answers out using the Euler&rsquo;s formula. Let&rsquo;s do
+more to show them on the complex plane keeping the concept of rotation in mind.</p>
+
+<p><a id="org786419a"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/problem1_1.png" data-caption="Figure 1: visualized the complex numbers from Problem Problem 1.1 in the complex plan">
+<img src="/img/tikz/problem1_1.png" alt="" width="80%" ></a>
+
+
+  
+  
+  <figcaption>
+    Figure 1: visualized the complex numbers from Problem <a href="#orgee29edb">Problem 1.1</a> in the complex plan
+  </figcaption>
+
+
+</figure>
+
+
+<p>From Figure <a href="#org786419a">1</a> , taking \(\color{green}{\tfrac{1}{2}e^{i\pi}}\) and
+\(\color{red}{\tfrac{1}{2}e^{-i\pi}}\) for example, in the complex plane, they
+are the same point \(-\tfrac{1}{2}\) which means \(-\tfrac{1}{2}\) can be
+reached by rotating \(\tfrac{1}{2}\) with angle \(\pi\) anti-clockwise or with angle
+\(-\pi\) clockwise. Essentially, this is because that \(e^{i\theta} =
+ e^{i(\theta + 2n\pi)}, n\in \{\ldots,-2,-1,0,1,2,\ldots\}\). It&rsquo;s
+straightforward that \(e^{i\pi} = e^{i(\pi + 2(-1)\pi)} = e^{-i\pi}\).</p>
+
+<p>In the end of <a href="#orgee29edb">Problem 1.1</a> and <a href="#orga79b87d">Problem 1.2</a>, I want to say
+more about expressing \(\tfrac{1+i}{1-i}\) in its polar form. There are two
+methods to get the polar form:</p>
+
+<ol>
+<li><p>multiply the fraction&rsquo;s numerator and denominator by \(( 1 + i )\)</p>
+
+<p>So we have:</p>
+
+<p>\begin{eqnarray*}
+\frac{1+i}{1-i}&amp; = &amp; \frac{(1+i)(1+i)}{(1-i)(1+i)} \\<br />
+&amp;=&amp; \frac{2i}{2} = i
+\end{eqnarray*}</p></li>
+
+<li><p>express the numerator and denominator in expoential form first, then do the
+following calculation.</p>
+
+<p>\begin{eqnarray*}
+\frac{1+i}{1-i} &amp;=&amp; \frac{\sqrt{2}e^{i\pi/4}}{\sqrt{2}e^{-i\pi/4}}  \\<br />
+&amp;=&amp; e^{i2\pi/4} = e^{i\pi/2} = i
+\end{eqnarray*}</p></li>
+</ol>
+
+<h2 id="problem-1-dot-3"><span class="section-num">3</span> Problem 1.3</h2>
+
+<div class="prob" id="prob13">
+  <div></div>
+
+<p>Problem 1.3: Determine the values of \(P_{\infty}\) and \(E_{\infty}\) for each
+of the following signals:</p>
+
+<p>\begin{equation*}
+\begin{array}{ll}
+\mathrm{(a)} \quad x_{1}(t) = e^{-2t}u(t) &amp; \mathrm{(b)} \quad x_{2}(t) = e^{i(2t + \pi/4)} \\<br />
+ \mathrm{( c)} \quad x_{3}(t) = \cos(t) &amp; \mathrm{(d)} \quad x_{1}[n] = (\tfrac{1}{2})^{n} u[n] \\<br />
+ \mathrm{( e )} \quad x_{2}[n] = e^{i(\pi/2n + \pi/8)} &amp; \mathrm{(f)} \quad x_{3}[n] = \cos(\tfrac{\pi}{4}n)
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>Before solving this problem, let&rsquo;s review the definition of \(P_{\infty}\) and
+\(E_{\infty}\). For a continuous time signal \(x(t)\), we have</p>
+
+<p>\begin{eqnarray}
+\label{eq:2}
+E_{\infty}&amp;=&amp; \lim_{T\to \infty} \int_{-T}^{T} |x(t)|^{2}\mathrm{d}t \\<br />
+P_{\infty}&amp;=&amp; \lim_{T\to \infty} \frac{1}{2T}\int_{-T}^{T} |x(t)|^{2}\mathrm{d}t = \lim_{T\to\infty} \frac{E_{\infty}}{2T}
+\end{eqnarray}</p>
+
+<p>For a discrete time signal \(x[n]\), we have:</p>
+
+<p>\begin{eqnarray}
+\label{eq:3}
+E_{\infty}&amp;=&amp; \lim_{N\to \infty} \sum_{n=-N}^{+N} |x[n]|^{2} \\<br />
+P_{\infty}&amp;=&amp; \lim_{N\to \infty} \frac{1}{2N+1} \sum_{n=-N}^{+N} |x[n]|^{2} = \lim_{N\to\infty} \frac{E_{\infty}}{2N+1}
+\end{eqnarray}</p>
+
+<p>Equation (\ref{eq:2})(\ref{eq:3}) are not only mathmatical definitions but also
+related to physical quantities such as power and energy in a physical system.
+For an electric circuit, taking the voltage \(v(t)\) and current \(i(t)\) across
+a resistor for example, the power at time \(t\) can be calculated by:</p>
+
+<p>\begin{equation}
+\label{eq:4}
+p(t) = v(t)i(t) = \frac{v^{2}(t)}{R}
+\end{equation}</p>
+
+<p>Let&rsquo;s go back to equation (\ref{eq:2}) and equation(\ref{eq:3}), if
+\(E_{\infty}&lt; \infty\) we say that the signal has finite energy otherwise
+infinite energy. If \(P_{\infty} &lt;\infty\) we say that the signal has finite
+power otherwise infinite power.</p>
+
+<p>Next let&rsquo;s determine the values of \(P_{\infty}\) and \(E_{\infty}\) for the
+given signals.</p>
+
+<h3 id="problem1-dot-3a--mathbf-a--x-1--t--e-2t-u--t"><span class="section-num">3.1</span> Problem1.3a \(\mathbf{(a)}: x_{1}(t)= e^{-2t}u(t)\)</h3>
+
+<p>\begin{eqnarray*}
+E_{\infty}  &amp; =  &amp; \int_{\infty}^{\infty} |e^{-2t}u(t)|^{2} \mathrm{d}t \\<br />
+&amp;=&amp; \int_{0}^{\infty} e^{-4t} \mathrm{d}t \\<br />
+&amp;=&amp; \frac{1}{4}
+\end{eqnarray*}</p>
+
+<p>So, it&rsquo;s straightforward that:</p>
+
+<p>\begin{equation}
+\label{eq:5}
+P_{\infty} = \lim_{T\to \infty} \frac{E_{\infty}}{2T}  = 0
+\end{equation}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-3.png" >
+<img src="/img/tikz/figprob1-3.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem1-dot-3b--mathbf-b--x-2--t--e-i--2t-plus-pi-4"><span class="section-num">3.2</span> Problem1.3b \(\mathbf{(b)}: x_{2}(t)= e^{i(2t+\pi/4)}\)</h3>
+
+<p>We have \(|e^{i(2t+\pi/4)}| = 1\) , therefore</p>
+
+<p>\begin{eqnarray*}
+E_{\infty}&amp;=&amp; \int_{\infty}^{\infty} |x_{2}(t)= e^{i(2t+\pi/4)}|^{2} \mathrm{d}t \\<br />
+&amp;=&amp; \infty
+\end{eqnarray*}</p>
+
+<p>For power \(P_{\infty}\), we have:</p>
+
+<p>\begin{eqnarray*}
+P_{\infty}&amp;= &amp;\lim_{T\to\infty} \frac{1}{2T}\int_{-T}^{T} |x_{2}(t)|^{2} \mathrm{d}t  \\<br />
+&amp;=&amp; 1
+\end{eqnarray*}</p>
+
+<p>This signal has constant power. If you keep the concept of rotation mentioned in
+Problem <a href="#orgee29edb">1</a>, you will notice immediately that all the points generated by
+\(x_{2}(t)\) lies on the unit circle.</p>
+
+<h3 id="problem-1-dot-3c--mathbf-c--x-3--t--cos--t"><span class="section-num">3.3</span> Problem 1.3c \(\mathbf{( c)}:x_{3}(t)=\cos(t)\)</h3>
+
+<p>\begin{eqnarray*}
+E_{\infty}&amp;=&amp; \lim_{T\to\infty} \int_{-\infty}^{\infty} |x_{3}(t)|^{2} \mathrm{d}t \\<br />
+&amp;=&amp; \int_{\infty}^{\infty} \cos(t)^{2} \mathrm{d}t = \infty
+\end{eqnarray*}</p>
+
+<p>\begin{eqnarray*}
+P_{\infty}&amp;=&amp; \lim_{T\to\infty} \frac{1}{2T}\int_{-T}^{T} |x_{3}(t)|^{2} \mathrm{d}t  \\<br />
+&amp;=&amp; \lim_{T\to\infty}\frac{1}{2T} \int_{-T}^{T} \cos(t)^{2} \mathrm{d}t \\<br />
+&amp;=&amp; \lim_{T\to\infty} \frac{1}{2T} \int_{-T}^{T} \frac{1+\cos(2t)}{2} \mathrm{d}t = \frac{1}{2}
+\end{eqnarray*}</p>
+
+<p>\(x_{3}(t)\)  can be visualized as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-3c.png" >
+<img src="/img/tikz/figprob1-3c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-3d--mathbf-d--quad-x-1-n--tfrac-1-2--n-u-n"><span class="section-num">3.4</span> Problem 1.3d \(\mathbf{(d):} \quad x_{1}[n] = (\tfrac{1}{2})^{n} u[n]\)</h3>
+
+<p>By definition, we have:</p>
+
+<p>\begin{eqnarray*}
+E_{\infty}&amp;=&amp;\lim_{N\to\infty}\sum_{n=-N}^{N} \big((\tfrac{1}{2})^{n}u[n]\big)^{2} \\<br />
+&amp;=&amp;\lim_{N\to\infty}\sum_{n=0}^{N} (\tfrac{1}{4})^{n} \\<br />
+&amp;=&amp; \tfrac{4}{3}
+\end{eqnarray*}</p>
+
+<p>Then,</p>
+
+<p>\begin{eqnarray*}
+P_{\infty}&amp;=&amp; \lim_{N\to\infty} \frac{1}{2N+1} \sum_{n=-N}^{N} \big((\tfrac{1}{2})^{n}u[n]\big)^{2}   \\<br />
+&amp;=&amp; 0
+\end{eqnarray*}</p>
+
+<p>\(x_{1}[n]\) can visualized as:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-3d.png" >
+<img src="/img/tikz/figprob1-3d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-4"><span class="section-num">4</span> Problem 1.4</h2>
+
+<div class="prob" id="prob:1-4">
+  <div></div>
+
+<p>Problem 1.4: Let \(x[n]\) be a signal with \(x[n]=0\) for\(n&lt; -2\) and \(n&gt;4\),
+for each signal given below, determine the values of \(n\) for which it is
+guaranteed to be zero.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{ (a) } &amp; &amp; x[n-3] \\<br />
+\mathbf{ (b) } &amp; &amp; x[n+4] \\<br />
+\mathbf{ ( c) } &amp; &amp; x[-n]  \\<br />
+\mathbf{ (d) } &amp; &amp; x[-n+2] \\<br />
+\mathbf{ (e) } &amp; &amp; x[-n-2]
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p>For the given signals \(\mathbf{(a)}\) to \(\mathbf{(e)}\), the transformations
+of the variable \(n\) will change the interval in which the signals are zero.
+For the convenience of calculation, we write the origin signal as:</p>
+
+<p>\begin{equation*}
+x[m] = 0, m&lt; -2 \quad \mathrm{and} \quad m&gt;4
+\end{equation*}</p>
+
+<p>We can visualize \(x(m)\) as below (I just give an example, you can name any
+signal that satisfy \(x[m] = 0, m&lt; -2 \ \mathrm{and} \ m&gt;4 \)):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4.png" >
+<img src="/img/tikz/figProb1-4.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-4a--mathbf-a--x-n-3"><span class="section-num">4.1</span> Problem 1.4a \(\mathbf{(a)}:x[n-3]\)</h3>
+
+<p>For signal \(\mathbf{(a)}\), to get the interval where \(x[n-3] = 0 \), we have:</p>
+
+<p>\begin{eqnarray*}
+  m=n-3 &amp;&lt;&amp; -2 \\<br />
+  m=n-3 &amp;&gt;&amp; 4
+\end{eqnarray*}</p>
+
+<p>Then, we have \( n &lt; 1 \ \mathrm{and} \ n &gt; 7\) from which we can see that
+the new signal is a right shift three relative to the origin signal, i.e. new
+signal is delayed with three.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4a.png" >
+<img src="/img/tikz/figProb1-4a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-4b--mathbf-b--x-n-plus-4"><span class="section-num">4.2</span> Problem 1.4b \(\mathbf{(b)}:x[n+4]\)</h3>
+
+<p>For signal \(\mathbf{(b)}\), we have:</p>
+
+<p>\begin{eqnarray*}
+m=n+4&amp;&lt;&amp;-2 \\<br />
+m=n+4&amp;&gt;&amp;4
+\end{eqnarray*}</p>
+
+<p>Then, we have \(n&lt;-6\ \mathrm{and}\ n&gt;0\) from which we can see that the new
+signal is a left shift four relative to the origin signal, i.e. new
+signal is advanced with four.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4b.png" >
+<img src="/img/tikz/figProb1-4b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-4c--mathbf-c--x-n"><span class="section-num">4.3</span> Problem 1.4c \(\mathbf{( c)}: x[-n]\)</h3>
+
+<p>For signal \(\mathbf{( c )}\), we have:</p>
+
+<p>\begin{eqnarray*}
+m=-n&amp;&lt;&amp;-2 \\<br />
+m=-n&amp;&gt;&amp;4
+\end{eqnarray*}</p>
+
+<p>Then, we have \(n&gt;2\ \mathrm{and} \ n&lt;-4\) from which we can see that the new
+signal is a reversal of the origin signal.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4c.png" >
+<img src="/img/tikz/figProb1-4c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-4d--mathbf-d--x-n-plus-2"><span class="section-num">4.4</span> Problem 1.4d \(\mathbf{(d)}: x[-n+2]\)</h3>
+
+<p>for signal \(\mathbf{(d)}\), we have:</p>
+
+<p>\begin{eqnarray*}
+m=-n+2&amp;&lt;&amp;-2 \\<br />
+m=-n+2&amp;&gt;&amp;4
+\end{eqnarray*}</p>
+
+<p>Then, we have \(n&gt;4\ \mathrm{and}\ n&lt;-2\). For \(x[-n+2]\), we can first
+flip the original signal then right shift the flipped signal by 2. Notice the
+contents in the brackets \(-(n+2)\). I would like treat it as \(-(n-2)\), by
+which I know that the minus symbol means reversal and \(-2\) means right
+shift by 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4d.png" >
+<img src="/img/tikz/figProb1-4d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-4e--mathbf-e--x-n-2"><span class="section-num">4.5</span> Problem 1.4e \(\mathbf{(e)}: x[-n-2]\)</h3>
+
+<p>For signal \(\mathbf{(e)}\), we have:</p>
+
+<p>\begin{eqnarray*}
+m=-n-2&amp;&lt;&amp;-2 \\<br />
+m=-n-2&amp;&gt;&amp;4
+\end{eqnarray*}</p>
+
+<p>Then, we have \( n&gt;0 \ \mathrm{and}\ n&lt;-6 \). To get the new signal, we have
+to filp the original signal first then left shift the flipped signal by two.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-4e.png" >
+<img src="/img/tikz/figProb1-4e.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-5"><span class="section-num">5</span> Problem 1.5</h2>
+
+<div class="prob" id="prob:1-5">
+  <div></div>
+
+<p>Let \(x(t)\) be a signal with \(x(t)=0, \ x&lt;3\). For each signal
+given below, determine the values of \(t\) for which it is guaranteed to be
+zero.</p>
+
+<p>\begin{equation*}
+\begin{array}{ll}
+\mathbf{(a)}: x(1-t) \qquad  &amp;   \mathbf{(b)}: x(1-t) + x(2-t)\qquad   \\<br />
+\mathbf{( c)}: x(1-t)x(2-t)\qquad &amp;  \mathbf{(d)}: x(3t) \qquad  \\<br />
+  \mathbf{(e)}: x(t/3)\qquad &amp; \\<br />
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>For signal \(\mathbf{(a)}: x(1-t) \),  we have:</p>
+
+<p>\begin{equation*}
+1-t &lt; 3
+\end{equation*}</p>
+
+<p>So, \(t&gt;-2\). Signal \(\mathbf{(a)}: x(1-t) \) can be achieved by flipping the
+origin signal first then right shifting one.</p>
+
+<p>For signal \(\mathbf{(b)}: x(1-t) + x(2-t) \) , we have:</p>
+
+<p>\begin{eqnarray*}
+1-t&amp;&lt; &amp;3 \\<br />
+2-t&amp;&lt;&amp; 3
+\end{eqnarray*}</p>
+
+<p>Because it a &ldquo;\(+\)&rdquo; between \(x(1-t)\) and \(x(2-t)\) so only when both of the
+two signals are zero, the result will be zero. For the first part we have the
+value zero when \(t&gt;-2\) the second \(t&gt;-1\), so the result will be the
+intersect of these two intervals, i.e. \(t&gt;-1\) . we achieve signal
+\(\mathbf{(b)}: x(1-t) + x(2-t) \) by adding signal \(\mathbf{(a)}: x(1-t) \)
+with a second signal \(x(2-t)\) which can be achieved by flipping it first then
+right shifting two.</p>
+
+<p>For signal \(\mathbf{( c)}: x(1-t)x(2-t) \), \(x(1-t)\) is multiplied by
+\(x(2-t)\), so if any one of these two signals is zero, the result is zero.
+Based on the result of signal \(\mathbf{( b )}\), we have \(t&gt;-2\).</p>
+
+<p>For signal \(\mathbf{( d )}: x(3t)\), we have:</p>
+
+<p>\begin{equation*}
+3t &lt; 3
+\end{equation*}</p>
+
+<p>Then, \(t&lt;1\). The signal is compressed by \(3\).</p>
+
+<p>For signal \(\mathbf{( e )}: x(t/3)\), we have:</p>
+
+<p>\begin{equation*}
+t/3 &lt; 3
+\end{equation*}</p>
+
+<p>Then, \(t&lt;9\). The signal is streched by \(3\).</p>
+
+<h2 id="problem-1-dot-6"><span class="section-num">6</span> Problem 1.6</h2>
+
+<div class="prob" id="prob:1-6">
+  <div></div>
+
+<p>Determine whether or not each of the following signals is periodic:</p>
+
+<p>\begin{eqnarray*}
+&amp;&amp;  \mathbf{(a)}: x_{1}(t) = 2e^{i(t+\pi/4)}u(t) \\<br />
+&amp;&amp;  \mathbf{( b )}: x_{2}[n] = u[n] + u[-n]  \\<br />
+&amp;&amp;  \mathbf{( c)}: x_{3}[n] = \sum_{k=-\infty}^{\infty} \{ \delta[n-4k] - \delta[n-1-4k] \}
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<ul>
+<li>\(x_{1}(t)\) is not periodic because \(u(t) = 0, t&lt;0\)</li>
+
+<li><p>\(x_{2}[n]\) is not periodic because</p>
+
+<p>\begin{equation*}
+x_{2}[n] =
+\begin{cases}
+2 &amp; n=0 \\<br />
+1 &amp; n\neq 0
+\end{cases}
+\end{equation*}</p></li>
+
+<li><p>For signal \(x_{3}[n]\) we know that with a \(n\), \(\delta[n-4k]\) and
+\(\delta[n-1-4k]\) can not be zero at the same time. Because \(k\) and
+\(n-4k\) must be integers, \(\delta[n-4k]\) and \(\delta[n-1-4k]\) will repeat
+themself every four steps. Furthermore, for every \(n\), the \(k\) runs from
+\(-\infty \) to \(\infty\), and only one \(k\) will match the \(n\) to set
+\(\delta[n-4k]\) or \(\delta[n-1-4k]\) as zero. We can test it by setting
+\(n = 0,1,2,\ldots\)</p>
+
+<p>\begin{eqnarray*}
+&amp;&amp; x[0] = 1,\quad x[1] = -1, \quad x[2] = 0, \quad x[3] = 0 \\<br />
+&amp;&amp; x[4] = 1,\quad x[5] = -1, \quad x[6] = 0, \quad x[7] = 0 \\<br />
+&amp;&amp; x[8] = 1,\quad x[9] = -1, \quad x[10] = 0, \quad x[11] = 0
+\end{eqnarray*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-6.png" >
+<img src="/img/tikz/figprob1-6.png" alt="" width="800" ></a>
+
+
+
+</figure>
+</li>
+</ul>
+
+<h2 id="problem-1-dot-7"><span class="section-num">7</span> Problem 1.7</h2>
+
+<div class="prob" id="prob:1-7">
+  <div></div>
+
+<p>For each signal given below, determine all the values of the independent
+variable at which the even part of the signal is guaranteed to be zero.</p>
+
+<p>\begin{equation*}
+\small
+\begin{array}{ll}
+ \mathbf{(a)}: x_{1}[n] = u[n] - u[n-4] \qquad  &amp;   \mathbf{(b)}: x_{2}(t) = \sin(\tfrac{1}{2} t) \qquad   \\<br />
+  \mathbf{( c)}: x_{3}[n] = (\frac{1}{2})^{n} u[n-3] \qquad &amp;  \mathbf{(d)}: x_{4}(t) = e^{-5t}u(t+2) \\<br />
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<h3 id="problem-1-dot-7a--mathbf-a--x-1-n-u-n-u-n-4"><span class="section-num">7.1</span> Problem 1.7a \(\mathbf{(a)}: x_{1}[n] = u[n] - u[n-4] \)</h3>
+
+<p>Any signal \(x_{1}(t)\) consists of two parts, even part \(\mathrm{Ev}
+\{x_{1}(t)\} \) and odd part \( \mathrm{Od} \{ x_{1}(t)\} \). For signal \(
+\mathbf{(a)} \), when the signal is zero, we have the domain of the independent
+value \( n&lt; 0 \) and \( n \geq 4   \) , so the even part of the signal will be
+zero when \( n\leq 4 \) and \(n\geq 4\). \(x_{t}(t)\) and its even part and odd
+part can be illustrated as:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-7.png" >
+<img src="/img/tikz/figprob1-7.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-7ab.png" >
+<img src="/img/tikz/figprob1-7ab.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-7ac.png" >
+<img src="/img/tikz/figprob1-7ac.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-7b--mathbf-b--x-2--t--sin--tfrac-1-2-t"><span class="section-num">7.2</span> Problem 1.7b \(\mathbf{(b)}: x_{2}(t) = \sin(\tfrac{1}{2} t) \)</h3>
+
+<p>For signal \(x_{2}(t) = \sin (\frac{1}{2} t)\), because it is an odd signal, so
+for all \(t\), the even part of \(x_{2}(t)\) is zero.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/fig1-7b.png" >
+<img src="/img/tikz/fig1-7b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Notice that for \(\sin(\frac{1}{2}t)\), the signal can be obtained by streching
+\(\sin(t)\) with a factor \(2\). In particular, the fundamental period is \(4\pi\).</p>
+
+<h3 id="problem-1-dot-7c--mathbf-c--x-3-n--frac-1-2--n-u-n-3"><span class="section-num">7.3</span> Problem 1.7c \(\mathbf{( c)}: x_{3}[n] = ( \frac{1}{2} )^{n} u[n-3] \)</h3>
+
+<p>For signal \(x_{3}[n] = ( \frac{1}{2} )^{n} u[n-3] \), which will be zeros for
+\(n&lt;3\). By definition, the even part of \(x_{3}[n]\) will be zeros for \(|n| &lt;
+3\). Actually, we do not visualize the signal to draw such a conclusion. For the
+sake of visualization, I illustrate the signal as below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-7ca.png" >
+<img src="/img/tikz/figProb1-7ca.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-7cb.png" >
+<img src="/img/tikz/figProb1-7cb.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-7cc.png" >
+<img src="/img/tikz/figProb1-7cc.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h3 id="problem-1-dot-7d--mathbf-d--x-4--t--e-5t-u--t-plus-2"><span class="section-num">7.4</span> Problem 1.7d \(\mathbf{(d)}: x_{4}(t) = e^{-5t}u(t+2) \)</h3>
+
+<p>For signal \(\mathbf{(d)}: x_{4}(t) = e^{-5t}u(t+2) \), we have \(x_{4}(t) = 0,<br />
+t&lt;-2\). Because the even and odd part is symmetrical with y-axis, there is no
+\(t\) at which the even and odd part of will be zero.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-7da.png" >
+<img src="/img/tikz/figProb1-7da.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-8"><span class="section-num">8</span> Problem 1.8</h2>
+
+<div class="prob" id="prob:1-8">
+  <div></div>
+
+<p>Express the real part of each of the following signals in the form
+\(Ae^{-at}\cos(\omega t + \phi)\), where \(A,a,\omega, \phi\) are real numbers
+with \(A&gt;0\) and \(-\pi &lt; \phi \leq \pi \):</p>
+
+<p>\begin{equation*}
+\small
+\begin{array}{ll}
+  \mathbf{( a )}: x_{1}(t) = -2 &amp;  \mathbf{( b )}: x_{2}(t) = \sqrt{2}e^{i\pi/4}\cos(3t + 2\pi) \\<br />
+  \mathbf{( c )}: x_{3}(t) = e^{-t}\sin(3t + \pi) &amp; \mathbf{( d )}: x_{4}(t) = i e^{(-2+i100)t}
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<ol>
+<li>\(\mathrm{Re}\{x_{1}(t)\} = -2 = 2e^{-0t}\cos(0t + \pi) \) with \(A = 2,
+   a=0, \omega = 0, \phi = \pi\)</li>
+<li>\( \mathrm{Re} \{x_{2}(t)\} = \mathrm{Re} \{ \sqrt{2} ( \cos( \pi/4 ) + i
+   \sin (\pi/4) ) \cos(3t) \} = \cos(3t) = e^{-0t}\cos( 3t + 0 ) \) with \(A =
+   1\), \( a = 0 \), \( \omega = 3 \),\(\phi = 0\)</li>
+<li>\( \mathrm{Re} \{ x_{3}(t) \} = \mathrm{Re} \{ e^{-t} \sin ( 3t + \pi )  \}
+   = e^{-t}\cos(3t + \pi/2) \) with \(A=1\), \(a=1\), \(\omega=3\), \(\phi=\pi/2\)</li>
+<li>\( \mathrm{Re} \{x_{4}(t)\}   = \mathrm{Re} \{
+   e^{i\pi/2} e^{(-2+i100)t} \} = \mathrm{Re}\{ e^{(-2 + i100)t + i\pi/2} \} =
+   e^{-2t}\cos(100t + \pi/2) \) with\(A = 1\), \(a=2\), \(\omega=100\), \(\phi=\pi/2\)</li>
+</ol>
+
+<h2 id="problem-1-dot-9"><span class="section-num">9</span> Problem 1.9</h2>
+
+<div class="prob" id="prob:1-9">
+  <div></div>
+
+<p>Determine whether or not each of the following signals is periodic. If a signal
+is periodic, specify its fundamental period.</p>
+
+<p>\begin{equation*}
+\begin{array}{ll}
+\mathbf{( a )}: x_{1}(t) = ie^{i10t} &amp;  \mathbf{( b )}: x_{2}(t) = e^{(-1 + i)t} \\<br />
+\mathbf{( c )}: x_{3}[n] = e^{i7\pi n} &amp; \mathbf{( d )}: x_{4}[n] = 3e^{i( 3\pi ( n + 0.5 ) ) / 5} \\<br />
+\mathbf{( e )}: x_{5}[n] = 3e^{ i3/5(n+ 0.5 )} &amp; <br />
+\end{array}
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>During figuring all the problems, we have to keep in mind that for a complex
+number after rotating \(2\pi \) around the origin the number returns to itself.</p>
+
+<ol>
+<li>For \(x_{1}(t)\), only when phase \(10t\) increases multiples of \(2\pi\),
+does the signal return to itself. So the fundamental period is \(
+  \frac{2\pi}{10} = \frac{\pi}{5} \).</li>
+<li>For \(x_{2}(t)\), which can be expressed as \(e^{-t}e^{it}\), because the
+factor \(e^{-t}\) , the signal is not periodic.</li>
+<li>For \(x_{3}[ n ]\), we have \(e^{i7\pi n} = e^{i\pi n}\), then the
+fundamental period is \(\frac{2\pi}{\pi} = 2\)</li>
+
+<li><p>For \(x_{4}[n]\), we have:</p>
+
+<p>\begin{equation*}
+\frac{3\pi N}{5} = 2\pi m
+\end{equation*}</p>
+
+<p>Then \(N = \frac{10m}{3}\), So fundamental period \(N=10\) when \(m=3\).</p></li>
+
+<li><p>For \(x_{5}[n]\), because \( m\frac{2\pi \times 5}{ 3 } \) is an irrational number, so
+the signal is not periodic.</p></li>
+</ol>
+
+<h2 id="problem-1-dot-10"><span class="section-num">10</span> Problem 1.10</h2>
+
+<div class="prob" id="prob:1-10">
+  <div></div>
+
+<p>Determine the fundamental period of the signal \(x(t) = 2\cos(10t + 1) -
+     \sin(4t -1)\)</p>
+
+<p></div></p>
+
+<p>\(x(t)\) consists of two parts, \(2\cos(10t + 1)\) and \(-\sin(4t -1)\).
+First, We figure out the fundamental period for these two signals
+respectively. For \(cos(10t + 1)\), \(10T_{1} = 2\pi \to T_{1} =
+     \frac{\pi}{5}\);  For \(-\sin(4t -1)\) , we have \( 4T_{2} = 2\pi \to T_{2}
+     = \frac{\pi}{2} \)  . Then, the fundamental period \(T = mT_{1} = nT_{2}\)
+,So when \(m=5\) and  \(n=2\) , we have \(T=\pi\) , \(T\)  is the least
+common multiples of \(T_{1}\) and \(T_{2}\)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figprob1-10.png" >
+<img src="/img/tikz/figprob1-10.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-11"><span class="section-num">11</span> Problem 1.11</h2>
+
+<div class="prob" id="prob:1-10">
+  <div></div>
+
+<p>Determine the fundamental period of the signal \(x[n] = 1 + e^{i4\pi n/7} -
+e^{i2\pi n/5}\)</p>
+
+<p></div></p>
+
+<p>\(x[n]\) consists of two main parts, \( e^{i4\pi n/7} \) and \(e^{i2\pi n/5}\).
+We have to figure out the two fundamental periods respectively then calculate
+the least common multiple of the two fundamental periods.</p>
+
+<p>For the first part we have:</p>
+
+<p>\begin{equation*}
+N_{1} = m \frac{2\pi}{ 4\pi /7 } = m\frac{7}{2}
+\end{equation*}</p>
+
+<p>So when \(m=2\), we have \(N_{1} = 7\).</p>
+
+<p>For the second part we have:</p>
+
+<p>\begin{equation*}
+N_{2} = m \frac{2\pi}{ 2\pi /5 }
+\end{equation*}</p>
+
+<p>So when \(m=1\), we have \(N_{2} = 5\). The lease common multiple of \(N_{1}\)
+and \(N_{2}\) is 35, i.e. the fundamental period of \(x[n]\)</p>
+
+<p>It is easy to validate it. We have \(x[0] = 1 = x[35]\)</p>
+
+<h2 id="problem-1-dot-12"><span class="section-num">12</span> Problem 1.12</h2>
+
+<div class="prob" id="prob:1-12">
+  <div></div>
+
+<p>Consider the discrete-time signal</p>
+
+<p>\begin{equation*}
+x[n] = 1- \sum_{k=3}^{\infty}\delta[n-1-k]
+\end{equation*}</p>
+
+<p>Determine the values of the integers \(M\) and \(n_{0}\) so that \(x[n]\)
+may be expressed as</p>
+
+<p>\begin{equation*}
+x[n] = u[Mn - n_{0}]
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>By definition of \(\delta[n]\) , we know that when \(n=1+k\), \(\delta[n-1-k] =
+1\). For \(x[n]\), because \(k\geq 3\), so for every \(n\geq 4\), there will
+always be one \(k\) such that \(x[n] = 0\). However, for every \(n\leq 3\),
+such that \(\sum_{k=3}^{\infty} \delta[n-1-k] = 1 \), i.e. \(\sum_{k=3}^{\infty}
+\delta[n-1-k] = 0 \) for all \(n\leq 3\) , So \(x[n] = 1\) for all \(n\leq 3\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-12.png" >
+<img src="/img/tikz/figProb1-12.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Then, by the definition of unit step function, we have \(M=-1\) and \(n_{0}=
+-3\) . We can see that \(x[n]\) can be obtained by flipping the unit step signal
+then right shifting it with \(3\).</p>
+
+<h2 id="problem-1-dot-13"><span class="section-num">13</span> Problem 1.13</h2>
+
+<div class="prob" id="prob:1-13">
+  <div></div>
+
+<p>Consider the continuous-time signal</p>
+
+<p>\begin{equation*}
+x(t) = \delta(t+2) - \delta(t-2)
+\end{equation*}</p>
+
+<p>Calculate the value of \(E_{\infty}\) for the signal</p>
+
+<p>\begin{equation*}
+y(t) = \int_{-\infty}^{t} x(\tau) \mathrm{d} \tau
+\end{equation*}</p>
+
+<p></div></p>
+
+<p>First let&rsquo;s visualize \(x(t)\) which can be shown as below</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-13a.png" >
+<img src="/img/tikz/figProb1-13a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Notice the &ldquo;\(1\)&rdquo; along with the end of the impulses at \((-2,0)\) and \((2,0)\)  only
+represent that the area of the impulse is \(1\).</p>
+
+<p>For \(y(t)\), we have:</p>
+
+<p>\begin{eqnarray*}
+y(t)&amp;=&amp; \int_{-\infty}^{t} x(\tau) \mathrm{d} \tau\\<br />
+&amp;=&amp;
+\begin{cases}
+0 &amp; t &lt; -2 \\<br />
+1 &amp; -2 \leq t &lt; 2 \\<br />
+0 &amp; 2 \leq t
+\end{cases}
+\end{eqnarray*}</p>
+
+<p>Then,</p>
+
+<p>\begin{equation*}
+E_{\infty} = \lim_{T\to\infty} \int_{-T}^{T} |y(t)|^{2} \mathrm{d}t = 4
+\end{equation*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-13b.png" >
+<img src="/img/tikz/figProb1-13b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-14"><span class="section-num">14</span> Problem 1.14</h2>
+
+<ul>
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2020-01-27 Mon 11:00]</span></span></li>
+</ul>
+
+<div class="prob" id="prob:1-14">
+  <div></div>
+
+<p>Consider a periodic signal</p>
+
+<p>\begin{equation*}
+x(t) =
+\begin{cases}
+1, &amp; 0\leq t\leq 1 \\<br />
+-2, &amp; 1 &lt; t &lt;2
+\end{cases}
+\end{equation*}</p>
+
+<p>with period \(T=2\), The derivative of this signal is related to the
+&ldquo;impulse train&rdquo;</p>
+
+<p>\begin{equation*}
+g(t) = \sum_{k=-\infty}^{\infty} \delta(t-2k)
+\end{equation*}</p>
+
+<p>with period \(T=2\). It can be shown that</p>
+
+<p>\begin{equation*}
+\frac{\mathrm{d}x(t)}{\mathrm{d}t} = A_{1}g(t-t_{1}) + A_{2} g(t-t_{2})
+\end{equation*}</p>
+
+<p>Determine the values of \(A_{1},t_{1},A_{2}\) and \(t_{2}\)</p>
+
+<p></div></p>
+
+<p>First let&rsquo;s visualize \(x(t)\) and \(g(t)\) :</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-14a.png" >
+<img src="/img/tikz/figProb1-14a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-14b.png" >
+<img src="/img/tikz/figProb1-14b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Then we try to figure out \(\frac{\mathrm{d}x(t)}{\mathrm{d}t}\) . By definition
+of \(\delta (t)\) in section of the textbook, we know that,</p>
+
+<p>\begin{equation*}
+\frac{\mathrm{d}x(t)}{\mathrm{d}t} = 3\sum_{k=-\infty}^{\infty} \sigma(t-2k )  -3 \sum_{k=-\infty}^{\infty} \sigma(t-2k -1)
+\end{equation*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-14c.png" >
+<img src="/img/tikz/figProb1-14c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Compared the result with \(g(t)\), then we have \(A_{1} = 3\), \(A_{2} = -3\),
+\(t_{1} = 0\) ,\(t_{2} = 1\)</p>
+
+<h2 id="problem-1-dot-15"><span class="section-num">15</span> Problem 1.15</h2>
+
+<div class="prob" id="prob:1-15">
+  <div></div>
+
+<p>Consider a system \(S\) with input \(x[n]\) and output \(y[n]\). This
+system is obtained through a series interconnection of a system \(S_{1}\)
+followed by a system \(S_{2}\). The input-output relationships for
+\(S_{1}\) and \(S_{2}\) are:</p>
+
+<p>\begin{eqnarray*}
+S_{1}:\quad  y_{1}[n]&amp;=&amp; 2x_{1}[n] + 4x_{1}[n-1] \\<br />
+S_{2}:\quad  y_{2}[n]&amp;=&amp; x_{2}[n-2] + \frac{1}{2}x_{2}[n-3]
+\end{eqnarray*}</p>
+
+<p>where \(x_{1}[n]\) and \(x_{2}[n]\) denote input signals.</p>
+
+<ol>
+<li>Determine the input-output relationship for system \(S\)</li>
+<li>Does the input-output relationship of system \(S\) change if the order
+in which \(S_{1}\) and \(S_{2}\) are connected in series is reversed
+(i.e., if \(S_{2}\) follows \(S_{1}\))?</li>
+</ol>
+
+<p></div></p>
+
+<h3 id="s-1--is-followed-by--s-2"><span class="section-num">15.1</span> \(S_{1}\) is followed by \(S_{2}\)</h3>
+
+<p>Because \(S_{1}\) is followed by \(S_{2}\), then the output of \(S_{1}\) is the
+input of \(S_{2}\) i.e., \(y_{1}[n]\) can be treated as \(x_{2}[n]\) , So,</p>
+
+<p>\begin{eqnarray*}
+y_{2}[n]&amp;=&amp; x_{2}[n-2] + \frac{1}{2}x_{2}[n-3] \\<br />
+&amp;=&amp; \underbrace{2x_{1}[n-2] + 4x_{1}[n-2-1]}_{y_{1}[n-2]}  + \underbrace{\tfrac{1}{2} \Big( 2x_{1}[n-3] + 4x_{1}[n-3-1] \Big)}_{\frac{1}{2}y_{1}[n-3]} \\<br />
+&amp;=&amp; 2x_{1}[n-2] + 5x_{1}[n-3] + 2x_{1}[n-4]
+\end{eqnarray*}</p>
+
+<p>\(y_{2}\) is the final output of system \(S\), and \(x_{1}[n]\) the input.</p>
+
+<h3 id="s-2--is-followed-by--s-1"><span class="section-num">15.2</span> \(S_{2}\) is followed by \(S_{1}\)</h3>
+
+<p>If \(S_{2}\) is followed by \(S_{1}\), then \(y_{2}[n]\) can be treated by
+\(x_{1}[n]\), \(y_{1}[n]\) is the final output of system \(S\) and \(x_{2}[n]\)
+the input.</p>
+
+<p>\begin{eqnarray*}
+y_{1}[n]&amp;=&amp; 2x_{1}[n] + 4x_{1}[n-1] \\<br />
+&amp;=&amp; \underbrace{2 \Big( x_{2}[n-2]  + \tfrac{1}{2} x_{2}[n-3] \Big)}_{2{y_{2}[n]}} + \underbrace{4 \Big( x_{2}[n-1-2] + \tfrac{1}{2}x_{2}[n-3-1] \Big)}_{4y_{2}[n]}   \\<br />
+&amp;=&amp; 2x_{2}[n-2] + 5x_{2}[n-3] + 2x_{2}[n-4]
+\end{eqnarray*}</p>
+
+<p>After comparing the result from (1) we can see that the two systems are
+identical, no matter who ( either \(S_{1}\) or \(S_{2}\)) comes first.</p>
+
+<p>Later we will learn that for any number of linear systems, the input-output
+relationship does not change no matter what order by which they are
+concatenated.</p>
+
+<h2 id="problem-1-dot-16"><span class="section-num">16</span> Problem 1.16</h2>
+
+<div class="prob" id="prob:1-16">
+  <div></div>
+
+<p>Consider a discrete-time system with input \(x[n]\) and output \(y[n]\).
+The input-output relationship for this system is</p>
+
+<p>\begin{equation*}
+y[n] = x[n]x[n-2]
+\end{equation*}</p>
+
+<ol>
+<li>Is the system memoryless?</li>
+<li>Determine the output of the system when the input is \(A\delta[n]\),
+where \(A\) is any real or complex number.</li>
+<li>Is the system invertible?</li>
+</ol>
+
+<p></div></p>
+
+<ol>
+<li><p>Is the system memoryless?</p>
+
+<p>By definition, a system is memoryless if its output for each value of
+the independent variable at a given time is dependent on the input at
+only the same time. Obviously, the output \(y[n]\) is dependent on not
+only the current time \(x[n]\) but also \(x[n-2]\). So the system is not
+memoryless.</p></li>
+
+<li><p>The output of the system \(y[n] = x[n]x[n-2] = A \delta[n] A \delta[n-2]
+        = A^{2} \delta[n]\delta[n-2]\). By the definition of \(\delta[n]\), we
+have \(y[n] = 0\)</p></li>
+
+<li><p>Is the system invertible?</p>
+
+<p>A system is said to be invertible if distinct inputs lead to distinct
+outputs. We can take it as the input and output has one-to-one map. For
+the given system, if we get one positive value, we cannot determine
+where the sign come from. i.e. it can be have a positive \(x[n]\) and a
+positive \(x[n-2]\) or a negative \(x[n]\) and a negative \(x[n-2]\). So
+the system is not invertible.</p></li>
+</ol>
+
+<h2 id="problem-1-dot-17"><span class="section-num">17</span> Problem 1.17</h2>
+
+<div class="prob" id="prob:1-17">
+  <div></div>
+
+<p>Consider a continuout-time system with input \(x(t)\) and output \(y(t)\)
+related by \(y(t) = x( \sin(t) )\).</p>
+
+<ol>
+<li>Is this system causal?</li>
+<li>Is this system linear?</li>
+</ol>
+
+<p></div></p>
+
+<p>A system is causal if the output at any time depends on values of the input at
+only the present and past times. We can anticipate the output of one causal
+system based on the history of the input. When it comes to \(y(t) = x(\sin(t))\)
+, we can have \(y(-\pi) = x(0), t=-\pi\). i.e. \(y(-\pi)\) is determined by
+an input from the future. So the system is not causual.</p>
+
+<p>If a system is linear, we have:</p>
+
+<ol>
+<li>The response to \(x_{1}(t) + x_{2}(t)\) is \(y_{1}(t) + y_{2}(t)\).</li>
+<li>The response to \(ax_{1}(t) \) is \(ay_{1}(t)\), where \(a\) is any complex
+constant.</li>
+</ol>
+
+<p>When the input is \(a_{1}x_{1}(\sin(t)) + a_{2}x_{2}(\sin(t)) \), the output
+will be \(a_{1}y_{1}(t) + a_{2}y_{2}(t)\) . The system is linear.</p>
+
+<h2 id="problem-1-dot-18"><span class="section-num">18</span> Problem 1.18</h2>
+
+<div class="prob" id="prob:1-18">
+  <div></div>
+
+<p>Consider a discrete-time system with input \(x[n]\) and output \(y[n]\)
+related by</p>
+
+<p>\begin{equation*}
+y[n] = \sum_{k=n-n_{0}}^{n+n_{0}} x[k]
+\end{equation*}</p>
+
+<p>where \(n_{0}\) is a finite positive integer.</p>
+
+<ol>
+<li>Is this system linear?</li>
+<li>Is this system time-invariant?</li>
+<li>If \(x[n]\) is known to be bounded by a finite integer \(B\) , (i.e.
+\(|x[n]| &lt; B\) for all \(n\)), it can be shown that \(y[n]\) is bounded
+by a finite number \(C\). We conclude that the given system is stable.
+Express \(C\) in terms of \(B\) and \(n_{0}\).</li>
+</ol>
+
+<p></div></p>
+
+<h3 id="linearity"><span class="section-num">18.1</span> linearity</h3>
+
+<p>According to definition of linearity, suppose we have two inputs \(x_{1}[n]\)
+and \(x_{2}[n]\), the reponse is \(y_{1}[n]\) and \(y_{2}[n]\). i.e.</p>
+
+<p>\begin{eqnarray*}
+y_{1}[n]&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{1}[k] \\<br />
+y_{2}[n]&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{2}[k] \\<br />
+\end{eqnarray*}</p>
+
+<p>Then for \(x_{3}[n] = x_{1}[n] + x_{2}[n]\), we have</p>
+
+<p>\begin{eqnarray*}
+y_{3}[n]&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{3}[k]   \\<br />
+&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} (x_{1}[k] + x_{2}[k]) \\<br />
+&amp;=&amp;\sum_{k=n-n_{0}}^{n+n_{0}} x_{1}[k]   + \sum_{k=n-n_{0}}^{n+n_{0}} x_{2}[k]   \\<br />
+&amp;=&amp; y_{1}[n] + y_{2}[n]
+\end{eqnarray*}</p>
+
+<p>When \(x_{3}[n] = ax_{1}[n]\),</p>
+
+<p>\begin{eqnarray*}
+y_{3}[n] &amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{3}[k]   \\<br />
+&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} ax_{1}[k] \\<br />
+&amp;=&amp; a y_{1}[n]
+\end{eqnarray*}</p>
+
+<p>So that the system is linear.</p>
+
+<h3 id="time-invariant"><span class="section-num">18.2</span> time invariant</h3>
+
+<p>If a system is time invariant, the output does not change if you input the
+same signal at any time. No matter when you repeat the same experiment, you will
+get the same output.</p>
+
+<p>For an input \(x_{1}[n]\), we have</p>
+
+<p>\begin{equation*}
+y_{1}[n] = \sum_{k=n-n_{0}}^{n+n_{0}} x_{1}[k]
+\end{equation*}</p>
+
+<p>Suppose we have another input \(x_{2}[n] = x_{1}[n-n_{1}]\), so</p>
+
+<p>\begin{eqnarray*}
+y_{2}[n]&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{2}[k]  \\<br />
+&amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x_{1}[k-n_{1}] \\<br />
+&amp;=&amp; \sum_{k=n-n_{1}-n_{0}}^{n-n_{1}+n_{0}} x_{1}[k] \\<br />
+&amp;=&amp; y_{1}[n-n_{1}]
+\end{eqnarray*}</p>
+
+<p>So when we have \(x_{2}[n] = x_{1}[n- n_{1}]\), then we have \(y_{2}[n] =
+y_{1}[n- n_{1}]\). So, the system is time invariant.</p>
+
+<h3 id="find--c"><span class="section-num">18.3</span> find \(C\)</h3>
+
+<p>we know that \(x[n] \leq B\), then</p>
+
+<p>\begin{eqnarray*}
+y[n] &amp;=&amp; \sum_{k=n-n_{0}}^{n+n_{0}} x[k] \\<br />
+&amp;\leq &amp;  \sum_{k=n-n_{0}}^{n+n_{0}} B \\<br />
+&amp;=&amp; ( 2n_{0} + 1 ) B
+\end{eqnarray*}</p>
+
+<p>So we have \(C \leq ( 2n_{0} +1 )B\).</p>
+
+<h2 id="problem-1-dot-19"><span class="section-num">19</span> Problem 1.19</h2>
+
+<div class="prob" id="prob:1-19">
+  <div></div>
+
+<p>For each of the following input-output relationships, determine whether
+the corresponding system is linear, time invariant or both</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)}\quad y(t)&amp;=&amp; t^{2} x(t-1) \\<br />
+\mathbf{(b)}\quad y[n]&amp;=&amp; x^{2}[n-2] \\<br />
+\mathbf{( c)}\quad y[n]&amp;=&amp; x[n+1] - x[n-1] \\<br />
+\mathbf{(d)}\quad y( t )&amp;=&amp; \mathrm{Odd}\{ x(t) \}
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<h3 id="problem-1-dot-19a--mathbf-a--y--t--t-2-x--t-1"><span class="section-num">19.1</span> Problem 1.19a  \(\mathbf{(a)}: y(t)= t^{2} x(t-1) \)</h3>
+
+<p>Suppose that \(y_{1}(t)\) and \(y_{2}(t)\) are the responses for input
+\(x_{1}(t)\) and \(x_{2}(t)\), respectively. Given \(x_{3}(t) = ax_{1}(t) +
+bx_{2}(t)\), then we have:</p>
+
+<p>\begin{equation*}
+  y_{3}(t) = t^{2}x_{3}(t-1) = t^{2} \Big( ax_{1}(t-1) + bx_{2}(t-1) \Big) = ay_{1}(t) + by_{2}(t)
+\end{equation*}</p>
+
+<p><strong>So the system is linear.</strong></p>
+
+<p>To check whether this system is time invariant, we must
+determine whether the time-invariant property holds for any input and any time
+shift \(t_{0}\). Suppose when \(x_{1}(t)\) is applied we have output \(y_{1}(t)
+= t^{2}x_{1}(t-1)\). We shfit \(x_{1}(t)\) with \(t_{0}\) to get
+\(x_{2}(t-t_{0})\) and apply it to the system. Then we have \(y_{2}(t) =
+t^{2}x_{2}(t-t_{0}-1)\) which is not the shifted version of \(y_{1}(t)\) which
+is \(y_{1}(t-t_{0}) = (t-t_{0})^{2} x_{2}(t-t_{0}-1) \).  <strong>So the system is not time invariant.</strong></p>
+
+<h3 id="problem-1-dot-19b--mathbf-b--y-n-x-2-n-2"><span class="section-num">19.2</span> Problem 1.19b  \(\mathbf{(b)}: y[n]= x^{2}[n-2] \)</h3>
+
+<p>To check whether the system is linear or not, suppose \(x_{3}[n] = ax_{1}[n] +
+bx_{2}[n]\)  then</p>
+
+<p>\begin{eqnarray*}
+y_{3}[n] &amp;=&amp; x_{3}^{2}[n-2] \\<br />
+&amp;=&amp; ( ax_{1}[n-2] + bx_{2}[n-2] )^{2} \\<br />
+&amp;=&amp; a^{2} x_{1}^{2}[n-2] + b^{2}x_{2}^{2}[n-2] + 2abx_{1}[n-2]x_{2}[n-2] \\<br />
+&amp;\neq&amp; ay_{1}[n] + by_{2}[n]
+\end{eqnarray*}</p>
+
+<p><strong>So the system is not linear</strong></p>
+
+<p>\(x_{1}[n]\) will generate output \(y_{1}[n] = x_{1}^{2}[n-2]\). Suppose
+\(x_{2}[n] = x_{1}[n-n_{0}]\), then we have \(y_{2}[n] = x_{2}^{2}[n-2] =
+ x_{1}^{2}[n-n_{0}-2] = y_{1}[n-n_{0}]\) , i.e. when the input shift with
+\(n_{0}\) the output will all shift with \(n_{0}\). <strong>So this system is time invariant</strong></p>
+
+<h3 id="problem-1-dot-19c--mathbf-c--y-n-x-n-plus-1-x-n-1"><span class="section-num">19.3</span> Problem 1.19c \(   \mathbf{( c)}: y[n]= x[n+1] - x[n-1] \)</h3>
+
+<p>First, we check whether or not the system is linear. consider</p>
+
+<p>\begin{eqnarray*}
+x_{1}[n]&amp;\to&amp; y_{1}[n] \\<br />
+x_{2}[n]&amp;\to&amp; y_{2}[n]
+\end{eqnarray*}</p>
+
+<p>Let \(x_{3}[n] = ax_{1}[n] + bx_{2}[n]\), then</p>
+
+<p>\begin{eqnarray*}
+y_{3}[n]&amp;=&amp; x_{3}[n+1] - x_{3}[n-1] \\<br />
+&amp;=&amp; ax_{1}[n+1] + bx_{2}[n+1] - ( ax_{1}[n-1] + bx_{2}[n-1] ) \\<br />
+&amp;=&amp; a(x_{1}[n+1] - ax_{1}[n-1]) + b(x_{2}[n+1] - x_{2}[n-2]) \\<br />
+&amp;=&amp; a y_{1}[n] + by_{2}[n]
+\end{eqnarray*}</p>
+
+<p>So</p>
+
+<p>\begin{equation*}
+ax_{1}[n] + bx_{2}[n] \to ay_{1}[n] + by_{2}[n]
+\end{equation*}</p>
+
+<p><strong>The system is linear.</strong></p>
+
+<p>Second, we check whether or not the system is time invariant. let \(x_{2}[n] =
+x_{1}[n-n_{0}]\) then
+we have</p>
+
+<p>\begin{equation*}
+y_{2}[n] = x_{2}[n+1] - x_{2}[n-1] = x_{1}[n-n_{0} + 1] - x_{1}[n-n_{0} -1] = y_{1}[n-n_{0}]
+\end{equation*}</p>
+
+<p>So the system&rsquo;s output and input see the same time shift. <strong>The system is time
+invariant</strong></p>
+
+<h3 id="problem-1-dot-19d--mathbf-d--y--t--mathrm-odd-x--t"><span class="section-num">19.4</span> Problem 1.19d \(     \mathbf{(d)}: y(t)= \mathrm{Odd}\{ x(t) \}\)</h3>
+
+<p>First, we check whether or not the system is linear. Considering two inputs
+\(x_{1}(t)\) and \(x_{2}(t)\), we have:</p>
+
+<p>\begin{eqnarray*}
+y_{1}(t)&amp;=&amp; \mathrm{Odd}\{ x_{1}(t) \}  \\<br />
+y_{2}(t) &amp;=&amp; \mathrm{Odd} \{ x_{2}(t) \}
+\end{eqnarray*}</p>
+
+<p>Let \(x_{3}(t) = ax_{1}(t) + bx_{2}(t)\), then</p>
+
+<p>\begin{eqnarray*}
+y_{3}(t)&amp;=&amp; \mathrm{Odd} \{ x_{3}(t) \} \\<br />
+&amp;=&amp; \mathrm{Odd} \{ ax_{1}(t) + bx_{2}(t) \} \\<br />
+&amp;=&amp; \mathrm{Odd} \{ax_{1}(t) \} + \mathrm{Odd} \{ bx_{2}(t) \} \\<br />
+&amp;=&amp; ay_{1}(t) + by_{2}(t)
+\end{eqnarray*}</p>
+
+<p><strong>The system is linear</strong>.</p>
+
+<p>Second we check whether or not the system is time-invariant. A system is time
+invariant if a time shift in the input signal results in an identical shift in
+the output signal.</p>
+
+<p>If we shift the input \(x(t)\) and get \(x(t-t_{0})\) then the result \(y(t)\)
+we become as \(y(t-t_{0})\). Before we check the property of time-invarant,
+let&rsquo;s first check one example. Suppose</p>
+
+<p>\begin{equation*}
+x_{1}(t) =
+\begin{cases}
+t, &amp; 0\leq t \leq 4 \\<br />
+0, &amp; \mathrm{otherwise}
+\end{cases}
+\end{equation*}</p>
+
+<p>Then</p>
+
+<p>\begin{equation*}
+y_{1}(t) = \mathrm{Odd}\{x_{1}(t)\} = \frac{x_{1}(t)-x_{1}(-t)}{2} =
+\begin{cases}
+\frac{1}{2}t &amp; -4 \leq t \leq 4 \\<br />
+0  &amp; \mathrm{otherwise}
+\end{cases}
+\end{equation*}</p>
+
+<p>We can visualize \(x_{1}(t)\) and \(y_{1}(t)\) as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/fig1-19d.png" >
+<img src="/img/tikz/fig1-19d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/fig1-19db.png" >
+<img src="/img/tikz/fig1-19db.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>If we shift \(x_{1}(t)\) by \(2\) to obtain \(x_{2}(t) = x_{1}(t-2)\), then we have</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-19dc.png" >
+<img src="/img/tikz/figProb1-19dc.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Then we have \(y_{2}(t)\),</p>
+
+<p>\begin{equation*}
+y_{2}(t) =
+\begin{cases}
+0, &amp; t &lt; -6 \\<br />
+\tfrac{1}{2}( t+2 ), &amp; -6 \leq t \leq -2 \\<br />
+0, &amp; -2 &lt; t \leq 2 \\<br />
+\frac{1}{2} (t-2), &amp; 2 &lt; t \leq 6 \\<br />
+0, &amp; 6 &lt; t
+\end{cases}
+\end{equation*}</p>
+
+<p>Then, we visualize \( y_{2}(t) \),</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-19dd.png" >
+<img src="/img/tikz/figProb1-19dd.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Notice, by shifting \(y_{1}(t)\) by \(2\) , we have \(y_{1}(t-2)\)</p>
+
+<p>\begin{equation*}
+y_{1}(t-2) =
+\begin{cases}
+\frac{1}{2} (t-2) &amp;  -2 \leq t \leq 6 \\<br />
+0 &amp; \mathrm{otherwise}
+\end{cases}
+\end{equation*}</p>
+
+<p>Now, we can derive that  \(y_{1}(t-2) \neq y_{2}(t)\) . Hence, <strong>The system is
+not time invariant</strong> .</p>
+
+<p>Also we can visualize \(y_{1}(t-2)\) to see how different
+\(y_{1}(t-2)\) and \(y_{2}(t)\) are.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-19de.png" >
+<img src="/img/tikz/figProb1-19de.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Now, we deduce that the system is time-invariant. For \(x_{1}(t)\), we have,</p>
+
+<p>\begin{equation*}
+y_{1}(t) = \mathrm{Odd}\{ x_{1}(t) \} = \frac{ x_{1}(t) - x_{1}(-t) }{2}
+\end{equation*}</p>
+
+<p>Now, let \(x_{2}(t) = x_{1}(t-t_{0})\) , then</p>
+
+<p>\begin{equation*}
+y_{2}(t) = \mathrm{Odd}\{ x_{2}(t) \} = \frac{ x_{2}(t) - x_{2}(-t) }{2} = \frac{ x_{1}(t-t_{0})  - x_{1}(-t - t_{0}) }{2}
+\end{equation*}</p>
+
+<p>Also, we have</p>
+
+<p>\begin{equation*}
+y_{1}(t-t_{0}) = \frac{ x_{1}(t-t_{0}) - x_{1}(-t + t_{0}) }{2}
+\end{equation*}</p>
+
+<p>Because \(y_{2}(t) \neq y_{1}(t- t_{0})\), therefore the system is not time invariant.</p>
+
+<h2 id="problem-1-dot-20"><span class="section-num">20</span> Problem 1.20</h2>
+
+<div class="prob" id="prob:1-2020">
+  <div></div>
+
+<p>A continuous-time linear system \(S\) with input \(x(t)\) and output
+\(y(t)\) yields the following input-output pairs:</p>
+
+<p>\begin{eqnarray*}
+x(t)&amp;=&amp; e^{i2t} \xrightarrow{S} y(t) = e^{i3t} \\<br />
+x(t)&amp;=&amp; e^{-i2t} \xrightarrow{S} y(t) = e^{-i3t}
+\end{eqnarray*}</p>
+
+<ol>
+<li>If \(x_{1}(t) = \cos(2t)\), determine the corresponding output
+\(y_{1}(t)\) for system \(S\).</li>
+<li>If \(x_{2}(t) = \cos(2(t-\frac{1}{2}))\), determine the corresponding
+output \(y_{2}(t)\) for system \(S\).</li>
+</ol>
+
+<p></div></p>
+
+<h3 id="x-1-t--cos--2t"><span class="section-num">20.1</span> \(x_{1}(t) = \cos(2t)\)</h3>
+
+<p>Because</p>
+
+<p>\begin{equation*}
+x_{1}(t) = \cos(2t) = \frac{ e^{i2t} + e^{-i2t} }{2}
+\end{equation*}</p>
+
+<p>The system \(S\) is linear system, so the output should be</p>
+
+<p>\begin{equation*}
+y_{1}(t) = \frac{ e^{i3t} + e^{-i3t} }{2} = \cos(3t)
+\end{equation*}</p>
+
+<h3 id="x-2-t--cos--2t-frac-1-2"><span class="section-num">20.2</span> \(x_{2}(t) = \cos(2(t-\frac{1}{2}))\)</h3>
+
+<p>Using Euler&rsquo;s formula, we represent \(x_{2}(t)\) using the exponential form.</p>
+
+<p>\begin{eqnarray*}
+ x_{2}(t) &amp;=&amp; \frac{ e^{i(2(t-\frac{1}{2}))}  + e^{-i(2(t-\frac{1}{2}))} }{2} \\<br />
+&amp;=&amp; \frac{1}{2} e^{-i}e^{i2t} + \frac{1}{2}e^{i}e^{-i2t}
+\end{eqnarray*}</p>
+
+<p>Because \(\frac{1}{2}e^{i}\) and \(\frac{1}{2}e^{-i}\) are complex constants and
+the system is linear, so we have the output</p>
+
+<p>\begin{equation*}
+y_{2}(t) = \frac{1}{2}e^{-i}e^{i3t} + \frac{1}{2}e^{i}e^{-i3t} = \frac{ e^{i3(t-\tfrac{1}{3})}  + e^{-i3(t-\tfrac{1}{3})}}{2} = \cos(3(t- \tfrac{1}{3}))
+\end{equation*}</p>
+
+<p>Therefore we have \(y_{2}(t) = \cos(3(t-\tfrac{1}{3}))\).</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/signalsandsystemssolution/example3/" rel="next">Example Page 2</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/" rel="prev">solution of chapter 1 problems 1.21-1.31</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Feb 8, 2020</p>
+
+          
+
+
+          
+
+        </div>
+
+      </article>
+
+      
+
+
+<footer class="footer-section bg-with-black">
+    <div class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/logo2.png" alt="">
+                        <ul class="fta-list">
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Finacial Planning</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Investments Management</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Contact Us</h3>
+                        <ul class="fta-list">
+                            <li>Address: 8th floor, 379 Hudson St, New York, NY 10018</li>
+                            <li>Phone: (+1) 96 716 6879</li>
+                            <li>Email: contact@site.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<footer>
+    
+
+    <p class="powered-by">
+        &copy; MSC, 2019-2020, All rights reserved &middot; 
+
+        
+    </p>
+
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js" integrity="sha256-0w92bcB21IY5+rGI84MGj52jNfHNbXVeQLrZ0CGdjNY=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/matlab.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/c.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/elisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/lisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/shell.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/latex.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key="></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.84d185001460a90007fb2f6dcc66616e.js"></script>
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         tex2jax: {
+             inlineMath: [['$','$'], ['\\(','\\)']] },
+         displayMath: [['$$','$$'], ['\\[','\\]']],
+         displayAlign: "center",
+         displayIndent: "0em",
+         "HTML-CSS": { scale: 100,
+                       linebreaks: { automatic: "false" },
+                       webFont: "TeX"
+         },
+         SVG: {scale: 100,
+               linebreaks: { automatic: "false" },
+               font: "TeX"},
+         NativeMML: {scale: 100},
+         TeX: { equationNumbers: {autoNumber: "AMS"},
+                MultLineWidth: "90%",
+                TagSide: "right",
+                TagIndent: ".8em"
+         }
+     });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools | MSC</title>
+    <link>https://msteamc.github.io/categories/tools/</link>
+      <atom:link href="https://msteamc.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tools</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Fri, 31 Jan 2020 21:14:00 +0800</lastBuildDate>
+    <image>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
+      <title>Tools</title>
+      <link>https://msteamc.github.io/categories/tools/</link>
+    </image>
+    
+    <item>
+      <title>Set up the TikZ in Emacs Org</title>
+      <link>https://msteamc.github.io/post/set-up-the-tikz-in-emacs-org/</link>
+      <pubDate>Fri, 31 Jan 2020 21:14:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/post/set-up-the-tikz-in-emacs-org/</guid>
+      <description>
+
+&lt;p&gt;&lt;style&gt;
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+&lt;/style&gt;
+&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; &lt;a href=&#34;#config-the-header-args&#34;&gt;config the header args&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; &lt;a href=&#34;#generate-results-with-different-formats&#34;&gt;generate results with different formats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;3&lt;/span&gt; &lt;a href=&#34;#export-the-results-according-to-the-backend&#34;&gt;export the results according to the backend&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;4&lt;/span&gt; &lt;a href=&#34;#the-final-workflow&#34;&gt;the final workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;!--endtoc--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    An introduction to setup the TikZ environment in Emacs Org File. So that in Org file, you can generate either vector graph of &lt;code&gt;pdf&lt;/code&gt;  format or raster graph of &lt;code&gt;png&lt;/code&gt; format. Furthermore, you can export the vector graph when latex is called and otherwise raster graph.
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;config-the-header-args&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; config the header args&lt;/h2&gt;
+
+&lt;p&gt;You can embed TiKz (One of \(\LaTeX\) graphic package) code into a Org file. With
+org-babel, you can generate ,insert and export the figure generated from Tikz
+package. At first, you need set up the environment. &lt;a href=&#34;https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-LaTeX.html&#34; target=&#34;_blank&#34;&gt;This Post&lt;/a&gt; serves as a good
+introduction for beginners. Following it you may have a minimum working example
+like below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;#+name: tutorial
+#+header: :file &amp;quot;~/Dropbox/mstemc_hugo/static/img/tikz/tutorial.png&amp;quot;
+#+header: :results raw :exports none :fit yes :border 0cm
+#+header: :imagemagick t :iminoptions -density 400
+#+header: :imoutoptions -geometry 400 -flatten
+#+header: :headers &#39;(&amp;quot;\\usepackage{tikz} \\usetikzlibrary{positioning,
+           shapes.symbols, calc}&amp;quot;)
+#+begin_src latex
+  \begin{tikzpicture}
+    \node [circle, draw, fill=red!20] at (0,0) {1}
+    child { node [circle, draw, fill=blue!30] {2}
+      child { node [circle, draw, fill=green!30] {3} }
+      child { node [circle, draw, fill=yellow!30] {4} }};
+  \end{tikzpicture}
+#+end_src
+#+RESULTS: tutorial
+[[file:../../img/tikz/tutorial.png]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The example begins with several lines containing &lt;code&gt;#+header&lt;/code&gt; which is sort of
+clutter. we can put them in a file and include it at the beginning of the Org
+file.&lt;/p&gt;
+
+&lt;h2 id=&#34;generate-results-with-different-formats&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; generate results with different formats&lt;/h2&gt;
+
+&lt;p&gt;By changing the extension of &lt;code&gt;:file&lt;/code&gt; (which is &lt;code&gt;pdf&lt;/code&gt; for
+&lt;code&gt;&amp;quot;../../img/tikz/tutorial.pdf&amp;quot;&lt;/code&gt; ), we can generate results with different formats.
+Now, I need &lt;code&gt;pdf&lt;/code&gt; and &lt;code&gt;png&lt;/code&gt; . You can see the result by just press &lt;code&gt;C-c C-c&lt;/code&gt; in the
+body of the tikz code.&lt;/p&gt;
+
+&lt;h2 id=&#34;export-the-results-according-to-the-backend&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;3&lt;/span&gt; export the results according to the backend&lt;/h2&gt;
+
+&lt;p&gt;You can set &lt;code&gt;:exports&lt;/code&gt; to control how the results will be exported. Now I set it
+as &lt;code&gt;none&lt;/code&gt; which means the result will not be exported to latex or other format. I
+want to set more options of the exports. So I use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;#+ATTR_HTML:  :width 800 :align center
+#+ATTR_LATEX: :width 0.8\textwidth :align center
+{{{if-latex(tutorial.pdf,tutorial.png)}}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;if-latex&lt;/code&gt; is a Org MACRO whose definition is :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;#+MACRO: if-latex (eval (if
+(org-export-derived-backend-p org-export-current-backend &#39;latex)
+ (concat &amp;quot;[[file:../../img/tikz/&amp;quot;  $1 &amp;quot;]]&amp;quot;)
+ (concat &amp;quot;[[file:../../img/tikz/&amp;quot;  $2 &amp;quot;]]&amp;quot;) ))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;if-latex&lt;/code&gt; MACRO let you export different formats by the backend. If the
+backend is &lt;code&gt;latex&lt;/code&gt; then, &lt;code&gt;pdf&lt;/code&gt; format figure will be exported. Otherwise, &lt;code&gt;png&lt;/code&gt; format
+figure. Eventually, in the final &lt;code&gt;pdf&lt;/code&gt; document, you figure can be zoomed in or
+out without losing any resolution.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-final-workflow&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;4&lt;/span&gt; the final workflow&lt;/h2&gt;
+
+&lt;p&gt;The minimum working example at the start of this post is simplifed as below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;#+header: :file  &amp;quot;../../img/tikz/tutorial.pdf&amp;quot;
+#+begin_src latex
+  \begin{tikzpicture}
+    \node [circle, draw, fill=red!20] at (0,0) {1}
+    child { node [circle, draw, fill=blue!30] {2}
+      child { node [circle, draw, fill=green!30] {3} }
+      child { node [circle, draw, fill=yellow!30] {4} }};
+  \end{tikzpicture}
+#+end_src
+
+#+RESULTS:
+[[file:../../img/tikz/tutorial.png]]
+
+The following is the generated figure.
+#+ATTR_HTML:  :width 800 :align center
+#+ATTR_LATEX: :width 0.8\textwidth :align center
+{{{if-latex(tutorial.pdf,tutorial.png)}}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Many settings are grouped into a setup file which is included at the top of this
+post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;#+SETUPFILE: ~/.spacemacs.d/org-templates/math-en.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, If you set the extension of the target file in the first line either &lt;code&gt;pdf&lt;/code&gt; or
+&lt;code&gt;png&lt;/code&gt; , a corresponding &lt;code&gt;pdf&lt;/code&gt; or &lt;code&gt;png&lt;/code&gt; figure will be generated. If execute &lt;code&gt;M-x
+org-toggle-inline-images&lt;/code&gt;  , you can preview the result. If export the org-file
+as latex file then the &lt;code&gt;pdf&lt;/code&gt; file, the image of &lt;code&gt;pdf&lt;/code&gt; format will be inserted. If
+export to other format, &lt;code&gt;png&lt;/code&gt; image will be used.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eason Zhang2 | MSC</title>
+    <link>https://msteamc.github.io/authors/eason-zhang2/</link>
+      <atom:link href="https://msteamc.github.io/authors/eason-zhang2/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eason Zhang2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 06 Oct 2019 08:28:00 +0800</lastBuildDate>
+    <image>
+      <url>https://msteamc.github.io/img/icon-32.png</url>
+      <title>Eason Zhang2</title>
+      <link>https://msteamc.github.io/authors/eason-zhang2/</link>
+    </image>
+    
+    <item>
+      <title>zcl an example video</title>
+      <link>https://msteamc.github.io/publication/zcl-an-example-video/</link>
+      <pubDate>Sun, 06 Oct 2019 08:28:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/publication/zcl-an-example-video/</guid>
+      <description>&lt;p&gt;This is a video example.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

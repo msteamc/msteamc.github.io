@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="MSC">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="1 Problem 1.21  A continuout-time signal \(x(t)\) is shown below. Sketch and label carefully each of the following signals:
+\begin{equation*} \begin{array}{ll} \mathbf{(a)}: x(t-1) &amp; \mathbf{(b)}: x(2-t) \\
+\mathbf{( c)}: x(2t &#43; 1) &amp; \mathbf{(d)}: x(4-\frac{t}{2}) \\
+\mathbf{(e)}: [x(t) &#43; x(-t)] u(t) &amp; \mathbf{(f)}: x(t)\delta(t &#43;\frac{3}{2}) - \delta(t-\frac{3}{2}) \end{array} \end{equation*}
+   
+Before we figure all the sub-problem out. Let&rsquo;s review how \(a\) and \(b\) affect \(x(at&#43;b)\) .">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(151,13,22)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarize-dark.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.2cffbf0bd96b559cc5797a48e806a1e1.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.8e161b50807e623d07d145dfe3927b61.css">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@makesteamclear">
+  <meta property="twitter:creator" content="@makesteamclear">
+  
+  <meta property="og:site_name" content="MSC">
+  <meta property="og:url" content="https://msteamc.github.io/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/">
+  <meta property="og:title" content="solution of chapter 1 problems 1.21-1.31 | MSC">
+  <meta property="og:description" content="1 Problem 1.21  A continuout-time signal \(x(t)\) is shown below. Sketch and label carefully each of the following signals:
+\begin{equation*} \begin{array}{ll} \mathbf{(a)}: x(t-1) &amp; \mathbf{(b)}: x(2-t) \\
+\mathbf{( c)}: x(2t &#43; 1) &amp; \mathbf{(d)}: x(4-\frac{t}{2}) \\
+\mathbf{(e)}: [x(t) &#43; x(-t)] u(t) &amp; \mathbf{(f)}: x(t)\delta(t &#43;\frac{3}{2}) - \delta(t-\frac{3}{2}) \end{array} \end{equation*}
+   
+Before we figure all the sub-problem out. Let&rsquo;s review how \(a\) and \(b\) affect \(x(at&#43;b)\) ."><meta property="og:image" content="https://msteamc.github.io/img/icon-32.png">
+  <meta property="twitter:image" content="https://msteamc.github.io/img/icon-32.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-02-08T20:11:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-02-08T20:11:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>solution of chapter 1 problems 1.21-1.31 | MSC</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/icon-32.png" alt="MSC"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_videos"><span>Videos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#msc_courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/support/"><span>Supports</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/faq/"><span>FAQ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/landing/"><span>landing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>MyCoursess</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/">solution manual of signals and systems by Oppenheim</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">chapter 1</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/">1.1-1.20</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-21-dot-31/">1.21-1.31</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/example2/">chapter 1 advanced problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example2/">Tips 3-5</a>
+      </li>
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example3/">Tips 3-7</a>
+      </li>
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example4/">Tips 3-8</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/example1/">chapter 1 basic problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/example1/">Tips 3-4</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/signalsandsystemssolution/chapter-1-basic-prolems/">chapter 6 advanced problems</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/signalsandsystemssolution/chapter-1-basic-prolems/">solutions to basic problems in chapter 1 4</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#problem-1-dot-21"><span class="section-num">1</span> Problem 1.21</a></li>
+<li><a href="#problem-1-dot-22"><span class="section-num">2</span> Problem 1.22</a></li>
+<li><a href="#problem-1-dot-23"><span class="section-num">3</span> Problem 1.23</a></li>
+<li><a href="#problem-1-dot-24"><span class="section-num">4</span> Problem 1.24</a></li>
+<li><a href="#problem-1-dot-25"><span class="section-num">5</span> Problem 1.25</a></li>
+<li><a href="#problem-1-dot-26"><span class="section-num">6</span> Problem 1.26</a></li>
+<li><a href="#problem-1-dot-27"><span class="section-num">7</span> Problem 1.27</a></li>
+<li><a href="#problem-1-dot-28"><span class="section-num">8</span> Problem 1.28</a></li>
+<li><a href="#problem-1-dot-29"><span class="section-num">9</span> Problem 1.29</a></li>
+<li><a href="#problem-1-dot-30"><span class="section-num">10</span> Problem 1.30</a></li>
+<li><a href="#problem-1-dot-31"><span class="section-num">11</span> Problem 1.31</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>solution of chapter 1 problems 1.21-1.31</h1>
+
+          <div class="article-style">
+            
+
+<h2 id="problem-1-dot-21"><span class="section-num">1</span> Problem 1.21</h2>
+
+<div class="prob" id="prob:1-21">
+  <div></div>
+
+<p>A continuout-time signal \(x(t)\) is shown below. Sketch and label carefully
+each of the following signals:</p>
+
+<p>\begin{equation*}
+\begin{array}{ll}
+\mathbf{(a)}: x(t-1) &amp; \mathbf{(b)}: x(2-t) \\<br />
+\mathbf{( c)}: x(2t + 1) &amp; \mathbf{(d)}: x(4-\frac{t}{2}) \\<br />
+\mathbf{(e)}: [x(t) + x(-t)] u(t) &amp; \mathbf{(f)}: x(t)\delta(t +\frac{3}{2}) - \delta(t-\frac{3}{2})
+\end{array}
+\end{equation*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-21-0.png" >
+<img src="/img/tikz/figProb1-21-0.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p></div></p>
+
+<p>Before we figure all the sub-problem out. Let&rsquo;s review how \(a\) and \(b\)
+affect \(x(at+b)\) . we know that:</p>
+
+<ol>
+<li>when \(|a| &lt; 1\), \(x(t)\) will be linearly stretched;</li>
+<li>when \(|a|&gt;1\), \(x(t)\) will be linearly compressed;</li>
+<li>when \(a &lt; 0\), \(x(t)\) will be reversed;</li>
+<li>when \(b\neq 0\) , \(x(t)\) will be shifted in time.</li>
+<li>when \(a&gt;0, b&gt;0\), \(x(t)\) will be shifted left.</li>
+<li>when \(a&gt;0,b&lt;0\), \(x(t)\) will be shifted right.</li>
+<li>when \(a<0,b>0\), \(x(t)\) will be reversed first then shifted right.</li>
+<li>when \(a&lt;0,b&lt;0\), \(x(t)\) will be reversed first, then shifted left.</li>
+</ol>
+
+<p><strong>Problem 1.21a</strong></p>
+
+<p>Based on the conclusion given above, we know that \(x(t-1)\) can be obtained by right
+shifting \(x(t)\) with step \(1\). So the result can be visualized as follows.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-21a.png" >
+<img src="/img/tikz/figProb1-21a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.21b</strong></p>
+
+<p>For \(x(2-t)\), we re-write it as \(x(-(t-2))\) which can be obtained by first
+reversing \(x(t)\) then right shifting it with step \(2\). The result can be
+shown as follows</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProblem1-21b.png" >
+<img src="/img/tikz/figProblem1-21b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.21c</strong></p>
+
+<p>\(x(2t + 1)\) can be re-written as \(x(2(t+\frac{1}{2}))\) which means that
+\(x(2t+1)\) can be obtained by first linearly compressing \(x(t)\) with factor 2
+then left shifting compressed signal by \(\frac{1}{2}\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-21c.png" >
+<img src="/img/tikz/figProb1-21c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.21d</strong></p>
+
+<p>\(x(4-\frac{t}{2})\) can be re-written as \(x( -\frac{1}{2}( t - 8 ) )\) which
+means that \(x(4-\frac{t}{2})\)  can be obtained by first linearly stretching
+\(x(t)\) by factor \(2\) then right shifting it with step \(8\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-21d.png" >
+<img src="/img/tikz/figProb1-21d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.21e</strong></p>
+
+<p>At first glance, \(\big[x(t) + x(-t)\big] u(t) \) is \(0\) if \( t&lt;0 \) .</p>
+
+<p>If \(
+t &gt; 0 \), we have to figure out \( x( -t ) \). After obtaining \( x(-t) \), we
+add the right part of \(x(t)\) and left part of \(x(-t)\) then we have \( [x(t) +
+x(-t)]u(t) \)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProblem1-21e.png" >
+<img src="/img/tikz/figProblem1-21e.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>\(x(t)\delta(t +\frac{3}{2}) - \delta(t-\frac{3}{2})\) only have two points with
+non-negative values: \(t=\frac{3}{2}\) and \(t=-\frac{3}{2}\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-21f.png" >
+<img src="/img/tikz/figProb1-21f.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-22"><span class="section-num">2</span> Problem 1.22</h2>
+
+<div class="prob" id="prob:1-22">
+  <div></div>
+
+<p>A discrete-time signal is shown in below figure. Sketch and label carefully
+each of the following signals:</p>
+
+<p>\begin{equation*}
+\begin{array}{ll}
+\mathbf{(a)}: x[n-4] &amp; \mathbf{(b)}: x[3-n] \\<br />
+\mathbf{( c)}: x[3n] &amp; \mathbf{(d)}: x[3n + 1] \\<br />
+\mathbf{(e)}: x[n]u[3-n] &amp; \mathbf{(f)}: x[n-2]\delta[n-2]\\<br />
+\mathbf{(g)}: \frac{1}{2}x[n] + \frac{1}{2}(-1)^{n}x[n] &amp;     \mathbf{(h)}: x[(n-1)^{2}]
+\end{array}
+\end{equation*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProbl1-22-0.png" >
+<img src="/img/tikz/figProbl1-22-0.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p></div></p>
+
+<p><strong>Problem 1.22a</strong></p>
+
+<p>\(x[n-4]\)  can be obtained by right shifting \(x[n]\) with step \(4\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22a.png" >
+<img src="/img/tikz/figProb1-22a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22b</strong></p>
+
+<p>\(x[3-n]\) can be obtained by reversing \(x[n]\) first then right shifting the
+reversed signal with step \(3\)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22b.png" >
+<img src="/img/tikz/figProb1-22b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22c</strong></p>
+
+<p>\(x[3n]\) can be obtained by downsampling \(x[n]\) with a factor \(3\). Notice
+that downsampling discrete-time signal is different with compressing
+continuous-time signal because discrete-time signal only have integers as
+independent variables.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22c.png" >
+<img src="/img/tikz/figProb1-22c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22d</strong></p>
+
+<p>\(x[3n+1]\) can be obtained by downsampling \(x[n]\) with a factor \(3\) and a
+delay \(1\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22d.png" >
+<img src="/img/tikz/figProb1-22d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22e</strong></p>
+
+<p>\(x[n]u[3-n]\) consists of two parts: \(x[n]\) and \(u[3-n]\). \(u[3-n]\), which
+can be obtained by reversing \(u[n]\) then right shifting \(3\) decides whether
+the result is zero or not.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22e.png" >
+<img src="/img/tikz/figProb1-22e.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Notice that \(x[n]u[3-n]\) is the same as \(x[n]\) which is due to that
+\(u[3-n]\) is \(0\) if \(n&gt;3\) and \(x[n]\) is also \(0\)  if \(n&gt;3\).</p>
+
+<p><strong>Problem 1.22f</strong></p>
+
+<p>\(x[n-2]\delta[n-2]\) can be obtained by sampling \(x[n]\) at \(n=2\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22f.png" >
+<img src="/img/tikz/figProb1-22f.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22g</strong></p>
+
+<p>\begin{equation*}
+\frac{1}{2}x[n] + \frac{1}{2}(-1)^{n}x[n] =
+\begin{cases}
+0    &amp; n \mathrm{\ is\ odd} \\<br />
+x[n] &amp; n \mathrm{\ is\ even} \\<br />
+\end{cases}
+\end{equation*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22g.png" >
+<img src="/img/tikz/figProb1-22g.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.22h</strong></p>
+
+<p>\(x[(n-1)^{2}]\) can be obtained by sampling \(x[n]\) with sampling index
+\((n-1)^{2}\).</p>
+
+<p>Let \(y[n] = x[(n-1)^{2}]\), we have</p>
+
+<p>\begin{eqnarray*}
+y[-1]&amp;=&amp;x[4] = 0 \\<br />
+y[0] &amp;=&amp;x[1] = 1 \\<br />
+y[1] &amp;=&amp;x[0] = 1 \\<br />
+y[2] &amp;=&amp;x[1] = 1 \\<br />
+y[3] &amp;=&amp;x[4] = 0
+\end{eqnarray*}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-22h.png" >
+<img src="/img/tikz/figProb1-22h.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-23"><span class="section-num">3</span> Problem 1.23</h2>
+
+<div class="prob" id="prob:1-23">
+  <div></div>
+
+<p>Determine and sketch the even and odd parts of the signals shown below.
+Label your sketches carefully</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23-0.png" >
+<img src="/img/tikz/figProb1-23-0.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p></div></p>
+
+<p>Before we figure them out, let&rsquo;s review the definition of odd and even part of
+one signal.</p>
+
+<p>Any signal can be seperated into two parts: the even part and the odd part.</p>
+
+<p>\begin{eqnarray*}
+x_{e}(t) = \mathrm{Even}\{x(t)\}&amp;=&amp; \frac{1}{2} [ x(t) + x(-t) ] \\<br />
+x_{o}(t) = \mathrm{Odd}\{x(t)\}&amp;=&amp; \frac{1}{2} [ x(t) - x(-t) ] \\<br />
+\end{eqnarray*}</p>
+
+<p><strong>Problem 1.23a</strong></p>
+
+<p>If \(t\le 0\), we have \(x_{e}(t) = \frac{1}{2} x(-t) \) ;</p>
+
+<p>if \(t &gt; 0 \) , we have \(x_{e}(t) = \frac{1}{2} x(t) \); So, we illustrate \(x_{e}(t)\) as follows</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23a.png" >
+<img src="/img/tikz/figProb1-23a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>If \(t&lt;0\), we have \(x_{o}(t) = - \frac{1}{2} x(-t) \) ;</p>
+
+<p>if \(t &gt; 0 \) , we have \(x_{o}(t) = \frac{1}{2} x(t) \); So, we illustrate \(x_{o}(t)\) as follows</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23ae.png" >
+<img src="/img/tikz/figProb1-23ae.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.23b</strong></p>
+
+<p>To draw the \(x_{e}(t)\) , get \(\frac{1}{2} x(t)\) , \(\frac{1}{2}x(-t)\) and \(-\frac{1}{2}x(-t)\)
+first.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23b1.png" >
+<img src="/img/tikz/figProb1-23b1.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>So we have \(x_{e}(t)\) and \(x_{o}(t)\) as below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23b2.png" >
+<img src="/img/tikz/figProb1-23b2.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.23c</strong></p>
+
+<p>I decide to figure this problem in a algebraic instead of geometrical way.
+because we have:</p>
+
+<p>\begin{equation*}
+x(t) =
+\begin{cases}
+-2t &amp; t&lt; 0\\<br />
+t &amp; t &gt; 0
+\end{cases}
+\end{equation*}</p>
+
+<p>So</p>
+
+<p>\begin{equation*}
+x(-t) =
+\begin{cases}
+-t &amp; t &lt; 0 \\<br />
+2t &amp; t&gt; 0
+\end{cases}
+\end{equation*}</p>
+
+<p>Then,</p>
+
+<p>\begin{eqnarray*}
+x_{e}(t)&amp;=&amp;
+\begin{cases}
+\frac{3}{2}t &amp; t&gt; 0\\<br />
+-\frac{3}{2}t &amp; t &lt; 0
+\end{cases}
+ \\<br />
+x_{o}(t)&amp;=&amp;
+\begin{cases}
+-\frac{1}{2}t &amp; t&gt; 0\\<br />
+-\frac{1}{2}t &amp; t&lt; 0
+\end{cases}
+\end{eqnarray*}</p>
+
+<p>Then we can draw them</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-23c.png" >
+<img src="/img/tikz/figProb1-23c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-24"><span class="section-num">4</span> Problem 1.24</h2>
+
+<div class="prob" id="prob:1-24">
+  <div></div>
+
+<p>Determine and sketch the even and odd parts of the signals depicted in the
+following figure. Label your sketches  carefully</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-24-0.png" >
+<img src="/img/tikz/figProb1-24-0.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p></div></p>
+
+<p>Based on the definition of even and odd parts of one signal and the analysis in <a href="#problem-1-dot-23">Problem 1.23</a> , draw the result directly.</p>
+
+<p><strong>Problem 1-24a</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-24a.png" >
+<img src="/img/tikz/figProb1-24a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.24b</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-24b.png" >
+<img src="/img/tikz/figProb1-24b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1-24c</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-24c.png" >
+<img src="/img/tikz/figProb1-24c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-25"><span class="section-num">5</span> Problem 1.25</h2>
+
+<div class="prob" id="prob:1-25">
+  <div></div>
+
+<p>Determine whether or not each of the following continuous-time signals is
+periodic. If the signal is periodic, determine its fundamental period.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)}: x(t) &amp;=&amp; 3\cos(4t + \frac{\pi}{3}) \\<br />
+\mathbf{(b)}: x(t) &amp;=&amp; e^{i( \pi t -1 )} \\<br />
+\mathbf{( c)}: x(t) &amp;=&amp; [\cos(2t - \frac{\pi}{3})]^{2} \\<br />
+\mathbf{(d)}: x(t) &amp;=&amp; \mathrm{Even}\{ \cos (4\pi t)u(t) \} \\<br />
+\mathbf{(e)}: x(t) &amp;=&amp; \mathrm{Even} \{\sin(4\pi t)u(t)\} \\<br />
+\mathbf{(f)}: x(t) &amp;=&amp; \sum_{n=-\infty}^{\infty} e^{-(2t -n)} u(2t-n)
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p><strong>Problem 1.25a</strong></p>
+
+<p>The signal is periodic and the fundamental period \(T\)
+satisfies \(4T = 2\pi\) , so \(T = \frac{\pi}{2}\)</p>
+
+<p><strong>Problem 1.25b</strong></p>
+
+<p>The signal is periodic and the fundamental period \(T\) satisfies
+ \(\pi T = 2\pi\), so \(T = 2\)</p>
+
+<p><strong>Problem 1.25c</strong></p>
+
+<p>To figure out whether or not the signal is periodic, we have to
+ re-express the signal as:</p>
+
+<p>\begin{eqnarray*}
+\bigg[\cos(2t - \tfrac{\pi}{3})\bigg]^{2} &amp;=&amp; \bigg[ \frac{ e^{i(2t-\tfrac{\pi}{3}) } - e^{-i(2t - \tfrac{\pi}{3})}  }{2}  \bigg]^{2} \\<br />
+ &amp;=&amp; \frac{1}{4} \bigg[ \frac{ e^{i2(2t-\tfrac{\pi}{3}) }  + e^{-i2(2t - \tfrac{\pi}{3})} }{2}    \bigg] \\<br />
+&amp;=&amp; \frac{1}{2} \big( 1 + \cos(4t - \tfrac{2\pi}{3})  \big)
+\end{eqnarray*}</p>
+
+<p>so the signal is periodic and the fundamental period \(T\) satisfies \(4T =
+2\pi\) , so \(T = \frac{\pi}{2}\) .</p>
+
+<p><strong>Problem 1.25d</strong></p>
+
+<p>Because even part of  \(\cos(4\pi t)u(t)\) is symmetrical about
+y-axis, the signal is periodic and the fundamental period \(T\) satisfies
+\(4\pi T = 2\pi \). So  the fundamental period is \(T = \frac{1}{2}\)</p>
+
+<p><strong>Problem 1.25e</strong></p>
+
+<p>Because \(\sin(4\pi t)\) is an odd signal and \(\mathrm{Even}
+\{\sin(4\pi t)u(t)\}\) is symmetrical about y-axis. So the signal is not periodic.</p>
+
+<p><strong>Problem 1.25f</strong></p>
+
+<p>From the signal \(\mathbf{(f)}\) , we can see that there is no difference
+between whether \(n\) is \(n+1\) or \(n-1\) because \(n\) have value from
+\(-\infty\) to \(\infty\). So when we set \(n\) as \(n+1\), we have,</p>
+
+<p>\begin{equation*}
+\sum_{n=-\infty}^{\infty} e^{-(2t -n-1)} u(2t-n-1) = \sum_{n=-\infty}^{\infty} e^{-(2t -n)} u(2t-n)
+\end{equation*}</p>
+
+<p>Notice we can move the \(1\) in the left part of the above equation into \(t\)
+, so</p>
+
+<p>\begin{equation*}
+\sum_{n=-\infty}^{\infty} e^{-(2( t -\tfrac{1}{2} ) -n)} u(2(t-\tfrac{1}{2})-n) = \sum_{n=-\infty}^{\infty} e^{-(2t -n)} u(2t-n)
+\end{equation*}</p>
+
+<p>Because \(n\) must be integers, so \(1\) is the minimum value we can add to
+\(n\). Hence, the signal is periodic and its fundamental period is \(\frac{1}{2}\)</p>
+
+<h2 id="problem-1-dot-26"><span class="section-num">6</span> Problem 1.26</h2>
+
+<div class="prob" id="prob:1-26">
+  <div></div>
+
+<p>Determine whether or not each of the following discrete-time signals is
+periodic. If the signal is periodic, determine its fundamental period.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)}: x[n] &amp;=&amp; \sin (\frac{6\pi}{7}n +1) \\<br />
+\mathbf{(b)}: x[n] &amp;=&amp; \cos(\frac{n}{8} - \pi) \\<br />
+\mathbf{( c)}: x[n] &amp;=&amp; \cos(\frac{\pi}{8}n^{2}) \\<br />
+\mathbf{(d)}: x[n] &amp;=&amp; \cos(\frac{\pi}{2}n)\cos(\frac{\pi}{4}n) \\<br />
+\mathbf{(e)}: x[n] &amp;=&amp; 2\cos(\frac{\pi}{4}n) + \sin(\frac{\pi}{8}n) - 2\cos(\frac{\pi}{2}n + \frac{\pi}{6})
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p>Suppose \(\mathbf{(a)}\) is periodic and the fundamental period is \(N\), so</p>
+
+<p>\begin{equation*}
+\frac{6\pi}{7}N = m2\pi
+\end{equation*}</p>
+
+<p>we have</p>
+
+<p>\begin{equation*}
+N = m \frac{14}{3}
+\end{equation*}</p>
+
+<p>Hence, signal \(\mathbf{(a)}\) is periodic and the fundamental period is \(14\)
+(when \(m=3\)).</p>
+
+<p>Suppose signal \(\mathbf{(b)}\) is periodic and the fundamental period is \(N\),
+so</p>
+
+<p>\begin{equation*}
+\frac{N}{8} = m2\pi
+\end{equation*}</p>
+
+<p>we have,</p>
+
+<p>\begin{equation*}
+N = 16m\pi
+\end{equation*}</p>
+
+<p>So there is no interger \(m\) such that \(N\) is integer. So the signal is not periodic.</p>
+
+<p>Suppose signal \(\mathbf{( c)}\) is periodic and the fundamental period is \(N\),
+we have</p>
+
+<p>\begin{equation*}
+x[n+N] = \cos(\frac{\pi}{8} (n + N)^{2} ) = \cos(\frac{\pi}{8} ( n^{2} + 2nN + N^{2}) )
+\end{equation*}</p>
+
+<p>and \(x[n] = x[n+N]\), Then</p>
+
+<p>\begin{equation*}
+\frac{\pi}{8}(2nN + N^{2}) = m2\pi
+\end{equation*}</p>
+
+<p>which means that no matter what \(n\) is the equation must have interger \(m\)
+and \(N\). When \(N=8\) we have \(m\) as integer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-26c.png" >
+<img src="/img/tikz/figProb1-26c.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Both \(\cos(\frac{\pi}{2}n)\) and \(\cos(\frac{\pi}{4}n)\) are periodic with
+fundamental period \(4\) and \(8\) respectively. So the least common multiple of
+\(4,8\) will be the fundamental period of signal \(\mathbf{(d)}\). i.e. \(8\)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-26d.png" >
+<img src="/img/tikz/figProb1-26d.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p><strong>Problem 1.26e</strong></p>
+
+<p>Signal \(\mathbf{(e)}\) consists of three parts \( \cos(\frac{\pi}{4}n) \) ,
+\(\sin(\frac{\pi}{8}n) \) and \(\cos(\frac{\pi}{2}n + \frac{\pi}{6})\) , with
+fundamental period \(8,16,4\) respectively. So the fundamental period is \(16\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-26e.png" >
+<img src="/img/tikz/figProb1-26e.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<h2 id="problem-1-dot-27"><span class="section-num">7</span> Problem 1.27</h2>
+
+<div class="prob" id="prob:1.27">
+  <div></div>
+
+<p>In this chapter, we introduced a number of general properities of systems.
+In particular, a system may or may not be</p>
+
+<ol>
+<li>Memoryless</li>
+<li>Time invariant</li>
+<li>Linear</li>
+<li>Causal</li>
+<li>Stable</li>
+</ol>
+
+<p>Determine which of these properities hold and which do not hold for each of
+the following continuous-time systems. Justify your answers. In each
+example, \(y(t)\) denotes the system output and \(x(t)\) is the system
+input.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)} y(t)&amp;=&amp;x(t-1) + x(2-t) \\<br />
+\mathbf{(b)} y(t)&amp;=&amp;[\cos(3t)]x(t) \\<br />
+\mathbf{( c)} y(t)&amp;=&amp;\int_{-\infty}^{2t} x(\tau)\mathrm{d}\tau \\<br />
+\mathbf{(d)} y(t)&amp;=&amp;
+\begin{cases}
+  0, &amp; t &lt; 0 \\<br />
+  x(t) + x(t-2), &amp; t\geq 0
+\end{cases}     \\<br />
+\mathbf{(e)} y(t) &amp;=&amp;
+\begin{cases}
+  0, &amp; x(t) &lt; 0 \\<br />
+  x(t) + x(t-2), &amp; x(t)\geq 0
+\end{cases}     \\<br />
+\mathbf{( f )} y(t) &amp;=&amp; x(t/3) \\<br />
+\mathbf{(g)} y(t) &amp;=&amp; \frac{\mathrm{d}x(t)}{\mathrm{d}t}
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p><strong>Memoryless</strong> : A system is memoryless if its output for each value of the
+independent variable at a give time is dependent on the input at only that same
+time.</p>
+
+<p><strong>Time invariant</strong>: A system is time invariant if the behavior and characteristics
+of the system are fixed over time. Time invariance can be justified very simply.
+A system is time invariant if a time shift in the input signal results in an
+identical time shift in the output signal.</p>
+
+<p><strong>Linear</strong>: A system is linear if it possesses the property of superposition: if an
+input consists of the weighted sum of several signals, then the output is the
+superposition.</p>
+
+<p><strong>Causality</strong>: A system is causal if the output at any time depends on values of
+the input at only the present and past time.</p>
+
+<p><strong>Stability</strong>: A system is stable if small inputs lead to response that do not
+diverge.</p>
+
+<p><strong>Problem 1.27a</strong></p>
+
+<ol>
+<li>\(y(0)=x(-1) + x(2)\) , system \(\mathbf{(a)} \) has memory;</li>
+<li>If we delay the input by \(t_{0}\), then we have the output \(x(t -1-t_{0}) +
+   x(2-t-t_{0})\); if we delay the output by \(t_{0}\), then we have the output
+\(y(t-t_{0}) = x(t-t_{0} -1) + x(2 - (t-t_{0}))\); system \(\mathbf{(a)}\) is
+time variant.</li>
+<li>System \(\mathbf{(a)}\) is not linear due to the counterexample \(x(t) =
+   t^{2}\). If \( x(t) = t^{2} \), \(y(t) = t^{2} -6t + 5\) which is obviously
+not linear.</li>
+<li>Because \(y(0)=x(-1) + x(2)\), system \(\mathbf{(a)}\) is not causal.</li>
+<li>If \(|x(t)| &lt; B\) , then \(|y(t)|&lt; 2B \). System \(\mathbf{(a)}\) is stable.</li>
+</ol>
+
+<p><strong>Problem 1.27b</strong></p>
+
+<ol>
+<li>The system is memoryless because the output only related with the current
+input.</li>
+<li>The system is time variant because the system has a time-varying gain with
+the input.</li>
+<li>The system is linear.</li>
+<li>The system is causal because the system is memoryless.</li>
+<li>The system is stable. If \(|x(t)| &lt; B\), then \(|y(t)| &lt; B\).</li>
+</ol>
+
+<p><strong>Problem 1.27c</strong></p>
+
+<ol>
+<li>The system has memory because of the integration.</li>
+
+<li><p>The system is time variant. Let \(x_{1}(t)\) be an arbitary signal, and
+\(y_{1}(t)\) the output. If we delay the input by \(t_{0}\) to get
+\(x_{2}(t) = x_{1}(t-t_{0})\), then the output should be:</p>
+
+<p>\begin{eqnarray*}
+y_{2}(t)&amp;=&amp; \int_{-\infty}^{2t} x_{2}(\tau) \mathrm{d}\tau \\<br />
+&amp;=&amp; \int_{-\infty}^{2t} x_{1}(\tau - t_{0}) \mathrm{d}\tau \\<br />
+&amp;=&amp; \int_{-\infty}^{2t + t_{0}} x_{1}(\tau ) \mathrm{d}\tau \\<br />
+\end{eqnarray*}</p>
+
+<p>However, when we delay the \(y_{1}(t)\) by \(t_{0}\), we get</p>
+
+<p>\begin{eqnarray*}
+y_{1}(t - t_{0})&amp;=&amp; \int_{-\infty}^{2(t-t_{0})} x_{1}(\tau ) \mathrm{d}\tau \\<br />
+&amp;\neq&amp; y_{2}(t)
+\end{eqnarray*}</p></li>
+
+<li><p>The system is linear because of integration.</p></li>
+
+<li><p>The system is not causal because \(y(t)\) is related with \(x(2t)\).</p></li>
+
+<li><p>The system is not stable because of the existence of \(-\infty\).</p></li>
+</ol>
+
+<p><strong>Problem 1.27d</strong></p>
+
+<ol>
+<li>The system has memory. because \(y(4) = x(4) + x(2)\)</li>
+<li>The system is time variant. because when \(t&lt;0\) the output is \(0\). If we
+shift the time to make \(t\geq 0\), then the output \(y(t)\) is \(x(t) +
+   x(t-2)\) which is possible not \(0\). i.e. a time shift in the input signal
+does not result in an identical time shift in the output signal.</li>
+<li>The system is linear.</li>
+<li>The system is causal because the current output only related with current or
+past input.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.27e</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time invariant. because a time shift in the input signal will
+definitely result an identical shift in the output. Notice carefully that the
+system is defined only relating with \(x(t)\) instead of \(t\) as in system
+\(\mathbf{(d)}\).</li>
+<li>The system is linear.</li>
+<li>The system is causal because the output only relate with the current and the
+past input.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.27f</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time variant.</li>
+<li>The system is linear.</li>
+<li>The system is not causal, because \(y(-1) = x(-\frac{1}{3})\).</li>
+<li>The system is stable.</li>
+</ol>
+
+<p>Now, I justify the properity of time variant of system \(\mathbf{(f)}\). Let
+arbitary input \(x_{1}(t)\) and the output \(y_{1}(t) = x_{1}(\tfrac{t}{3})\).
+Let \(x_{2}(t) = x_{1}(t - t_{0})\), then \(y_{2}(t) = x_{2}(\tfrac{t}{3}) =
+x_{1}( \frac{t}{3} - t_{0} )\) which is not equal with \(y_{1}(t-t_{0}) = x(\frac{t-t_{0}}{3})\) .</p>
+
+<p><strong>Problem 1.27g</strong></p>
+
+<ol>
+<li>The system has memory by definition of diffenence.</li>
+<li>The system is time invariant.</li>
+<li>The system is linear</li>
+<li>The system is causal.</li>
+<li>The system is not stable. For some signal \(x(t)\) with certain \(t\) the
+signal is not differentiable.</li>
+</ol>
+
+<h2 id="problem-1-dot-28"><span class="section-num">8</span> Problem 1.28</h2>
+
+<div class="prob" id="prob:1.28">
+  <div></div>
+
+<p>Determine which of the properties listed in Problem 1.27 hold and which do
+not hold for each of the following discrete-time systems. Justify your
+answers. In each example, \(y[n]\) denotes the system output and \(x[n]\) is
+the system input.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)} y[n]&amp;=&amp; x[-n] \\<br />
+\mathbf{(b)} y[n]&amp;=&amp; x[n-2] -2x[n-8] \\<br />
+\mathbf{( c)} y[n]&amp;=&amp; nx[n] \\<br />
+\mathbf{(d)} y[n]&amp;=&amp; \mathrm{Even} \{ x[n-1] \} \\<br />
+\mathbf{(e)} y[n]&amp;=&amp;
+\begin{cases}
+x[n], &amp; n\geq 1\\<br />
+0, &amp; n=0 \\<br />
+x[n+1], &amp; n\leq -1
+\end{cases} \\<br />
+\mathbf{(f)} y[n] &amp;=&amp;
+\begin{cases}
+x[n], &amp; n\geq 1\\<br />
+0, &amp; n=0 \\<br />
+x[n], &amp; n\leq -1
+\end{cases} \\<br />
+\mathbf{(g)} y[n] &amp;=&amp; x[4n+1]
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p><strong>Memoryless</strong> : A system is memoryless if its output for each value of the
+independent variable at a give time is dependent on the input at only that same
+time.</p>
+
+<p><strong>Time invariant</strong>: A system is time invariant if the behavior and characteristics
+of the system are fixed over time. Time invariance can be justified very simply.
+A system is time invariant if a time shift in the input signal results in an
+identical time shift in the output signal.</p>
+
+<p><strong>Linear</strong>: A system is linear if it possesses the property of superposition: if an
+input consists of the weighted sum of several signals, then the output is the
+superposition.</p>
+
+<p><strong>Causality</strong>: A system is causal if the output at any time depends on values of
+the input at only the present and past time.</p>
+
+<p><strong>Stability</strong>: A system is stable if small inputs lead to response that do not
+diverge.</p>
+
+<p><strong>Problem 1.28a</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system time variant.</li>
+<li>The system is linear.</li>
+<li>The system is not causal because \(y[-2]=x[2]\)</li>
+<li>The system is stable.</li>
+</ol>
+
+<p>Now, Let me justify the property of time variant. Let \(x_{1}[n]\) be an
+arbitary singal and hence the output \(y_{1}[n] = x_{1}[-n]\). Let \(x_{2}[n] =
+x_{1}[n-n_{0}]\) and hence \(y_{2}[n] = x_{2}[-n] = x_{1}[-n-n_{0}]\) which is
+not equal with \(y_{1}[n-n_{0}] = x_{1}[-(n-n_{0})]\).  Hence, the time shift in
+the input signal does not result in the same time shift in the output signal.</p>
+
+<p>The process of justifing can be visualized as below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-28a.png" >
+<img src="/img/tikz/figProb1-28a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-28a3.png" >
+<img src="/img/tikz/figProb1-28a3.png" alt="" width="60%" ></a>
+
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-28a2.png" >
+<img src="/img/tikz/figProb1-28a2.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>As we can see \(y_{2}[n]\neq y_{1}[n-2]\) i.e. the time shift ( here \(2\)) in
+input signal does not result in the identical time shift in the result.</p>
+
+<p><strong>Problem 1.28b</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time invariant.</li>
+<li>The system is linear.</li>
+<li>The system is causal.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.28c</strong></p>
+
+<ol>
+<li>The system is memoryless.</li>
+<li>The system is time variant.</li>
+<li>The system is linear.</li>
+<li>The system is causal.</li>
+<li>The system is not stable.</li>
+</ol>
+
+<p><strong>Problem 1.28d</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time variant.</li>
+<li>The system is linear.</li>
+<li>The system is not causal.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.28e</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time variant</li>
+<li>The system is linear.</li>
+<li>The system is not causal.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.28f</strong></p>
+
+<ol>
+<li>The system has no memory.</li>
+<li>The system is time variant.</li>
+<li>The system is linear.</li>
+<li>The system is causal.</li>
+<li>The system is stable.</li>
+</ol>
+
+<p><strong>Problem 1.28g</strong></p>
+
+<ol>
+<li>The system has memory.</li>
+<li>The system is time variant.</li>
+<li>The system is linear.</li>
+<li>The system is not causal.</li>
+<li>The system is stable.</li>
+</ol>
+
+<h2 id="problem-1-dot-29"><span class="section-num">9</span> Problem 1.29</h2>
+
+<div class="prob" id="prob:1-29">
+  <div></div>
+
+<ol>
+<li>Show that the discrete-time system whose input \(x[n]\) and output
+\(y[n]\) are related by \(y[n] = \mathrm{Re} \{x[n]\} \) is additive.
+Does this system remain additive if its input-output relationship is
+changed to \(y[n] = \mathrm{Re} \{ e^{i\pi n/4}x[n] \}  \)?  (Do not
+assume that \(x[n]\) is real in this problem.)</li>
+
+<li><p>In the text, we discussed the fact that the property of linearity for a
+system is equivalent to the system possessing both the additive property
+and homogeneity property. Determine whether each of the systems defined
+below is additive and/or homogeneous. Justify your answers by providing a
+proof for each property if it holds or a counterexample if it does not.</p>
+
+<p>\begin{eqnarray*}
+\mathrm{(i)}: y(t) &amp;=&amp;\frac{1}{x(t)} \big[ \frac{dx(t)}{dt} \big]^{2} \\<br />
+\mathrm{(ii)}: y[n] &amp;=&amp;
+\begin{cases}
+\frac{x[n]x[n-2]}{x[n-1]}, &amp; x[n-1] \neq 0 \\<br />
+0, &amp; x[n-1] = 0
+\end{cases}
+\end{eqnarray*}</p></li>
+</ol>
+
+<p></div></p>
+
+<p><strong>Problem 1.29a</strong></p>
+
+<p>Let \(x[n] = x_{r}[n] + i x_{i}[n]\) where \(x_{r}[n]\) and \(x_{i}[n]\) stand
+for the real part and imagary part of \(x[n]\) respectively. Let \(x_{1}[n] =
+x_{1r}[n] + ix_{1i}[n]\) and \(x_{2}[n] = x_{2r}[n] + i x_{2i}[n]\), so
+\(y_{1}[n] = \mathrm{Re} \{x_{1}[n]\} = x_{1r}[n]\)  and \(y_{2}[n] =
+\mathrm{Re}\{x_{2}[n]\} =x_{1r}[n]  \). Let \(x_{3}[n] = x_{1}[n] + x_{2}[n] = (
+x_{1r}[n] + x_{2r}[n]) + i( x_{1i}[n] + x_{2i}[n] )\). Then we have \(y_{3}[n] =
+x_{1r}[n] + x_{2r}[n] = y_{1}[n] + y_{2}[n]\). So the the relationship \(y[n] =
+\mathrm{Re}\{ x[n]\}\) between \(x[n]\) and \(y[n]\) is additive.</p>
+
+<p>Next Let&rsquo;s check whether or not the additive property of \(y[n] =\mathrm{Re} \{
+e^{i\pi n/4}x[n] \}  \) holds. First Let \(x[n] = x_{r}[n] + ix_{i}[n]\) like
+before. Then,</p>
+
+<p>\begin{eqnarray*}
+y[n]&amp;=&amp; \mathrm{Re} \{ e^{i\pi n/4}x[n] \}   \\<br />
+&amp;=&amp; \mathrm{Re} \{ (\cos(\tfrac{\pi n}{4} ) + i\sin(\tfrac{\pi n}{4})) ( x_{r}[n] + ix_{i}[n] ) \} \\<br />
+&amp;=&amp; \cos(\tfrac{\pi n}{4})x_{r}[n] -\sin( \tfrac{\pi n}{4} )x_{i}[n]
+\end{eqnarray*}</p>
+
+<p>The additive property holds in a straightforward way.</p>
+
+<p><strong>Problem 1.29b(i)</strong></p>
+
+<p>First let&rsquo;s check whether the additive property holds or not. Suppose</p>
+
+<p>\begin{eqnarray*}
+y_{1}(t)&amp;=&amp;  \frac{1}{x_{1}(t)} \big[ \frac{dx_{1}(t)}{dt} \big]^{2} \\<br />
+y_{2}(t)&amp;=&amp;  \frac{1}{x_{2}(t)} \big[ \frac{dx_{2}(t)}{dt} \big]^{2} \\<br />
+\end{eqnarray*}</p>
+
+<p>and \(x_{3}(t) = x_{1}(t) + x_{2}(t)\), then,</p>
+
+<p>\begin{eqnarray*}
+y_{3}(t)&amp;=&amp;  \frac{1}{x_{3}(t)} \big[ \frac{dx_{3}(t)}{dt} \big]^{2} \\<br />
+&amp;=&amp;  \frac{1}{x_1(t) + x_2(t)} \big[ \frac{d( x_1(t) + x_2(t) )}{dt} \big]^{2} \\<br />
+&amp;\neq&amp; y_{1}(t) + y_{2}(t)
+\end{eqnarray*}</p>
+
+<p>So the additive property does not holds.</p>
+
+<p>Second, let&rsquo;s check the property of homogeneity. Suppose \(x_{4}(t) =
+ax_{1}(t)\), then</p>
+
+<p>\begin{eqnarray*}
+y_{4}(t)&amp;=&amp;  \frac{1}{x_{4}(t)} \big[ \frac{dx_{4}(t)}{dt} \big]^{2} \\<br />
+&amp;=&amp; \frac{1}{ax_{1}(t)} \big[ \frac{dax_{1}(t)}{dt} \big]^{2} \\<br />
+&amp;=&amp; a\frac{1}{x_{1}(t)} \big[ \frac{dx_{1}(t)}{dt} \big]^{2} \\<br />
+&amp;=&amp; ay_{1}(t)
+\end{eqnarray*}</p>
+
+<p>So the homogeneity property holds.</p>
+
+<p><strong>Problem 1.29b(ii)</strong></p>
+
+<p>Let</p>
+
+<p>\begin{eqnarray*}
+y_{1}[n] &amp;=&amp;
+           \begin{cases}
+           \frac{x_{1}[n]x_{1}[n-2]}{x_{1}[n-1]}, &amp; x_{1}[n-1] \neq 0 \\<br />
+           0, &amp; x_{1}[n-1] = 0
+           \end{cases} \\<br />
+y_{2}[n] &amp;=&amp;
+           \begin{cases}
+           \frac{x_{2}[n]x_{2}[n-2]}{x_{2}[n-1]}, &amp; x_{2}[n-1] \neq 0 \\<br />
+           0, &amp; x_{2}[n-1] = 0
+           \end{cases}
+\end{eqnarray*}</p>
+
+<p>and let \(x_{3}[n] = x_{1}[n] + x_{2}[n]\), we have</p>
+
+<p>\begin{eqnarray*}
+y_{3}[n] &amp;=&amp;
+           \begin{cases}
+           \frac{x_{3}[n]x_{3}[n-2]}{x_{3}[n-1]}, &amp; x_{3}[n-1] \neq 0 \\<br />
+           0, &amp; x_{3}[n-1] = 0
+           \end{cases} \\<br />
+&amp;=&amp;
+           \begin{cases}
+           \frac{(x_1[n]+x_2[n]) ( x_{1}[n-2] + x_{2}[n-2] )}{x_{1}[n-1] + x_{2}[n-1]}, &amp; x_{1}[n-1] + x_{2}[n-1]\neq 0 \\<br />
+           0, &amp; x_{1}[n-1] + x_{2}[n-1]= 0
+           \end{cases}
+\end{eqnarray*}</p>
+
+<p>We cannot reach the conclusion that \(y_{3}[n]= y_{1}[n] + y_{2}[n]\). So the
+additive property does not hold.</p>
+
+<p>Second Let&rsquo;s check whether the homogeneity property holds. Let \(x_{4}[n] =
+ax_{1}[n]\) , It&rsquo;s easy to check the system is homogeneous. i.e. \(y_{4}[n] = ay_{1}[n]\)</p>
+
+<h2 id="problem-1-dot-30"><span class="section-num">10</span> Problem 1.30</h2>
+
+<div class="prob" id="prob:1-30">
+  <div></div>
+
+<p>Determine if each of the following systems is invertible. If it is,
+construct the inverse system. If it is not, find two input signals to the
+system that have the same output.</p>
+
+<p>\begin{eqnarray*}
+\mathbf{(a)} y(t)&amp;=&amp;x(t-4) \\<br />
+\mathbf{(b)} y(t)&amp;=&amp;\cos[x(t)] \\<br />
+\mathbf{( c)} y(t)&amp;=&amp;nx[n] \\<br />
+\mathbf{(d)} y(t)&amp;=&amp;\int_{-\infty}^{t} x(\tau)d\tau \\<br />
+\mathbf{(e)} y[n]&amp;=&amp;
+\begin{cases}
+x[n-1], &amp; n\geq 1 \\<br />
+0, &amp; n=0 \\<br />
+x[n], &amp; n\leq -1
+\end{cases} \\<br />
+\mathbf{(f)} y[n]&amp;=&amp; x[n]x[n-1] \\<br />
+\mathbf{(g)} y[n]&amp;=&amp; x[1-n] \\<br />
+\mathbf{(h)} y(t)&amp;=&amp; \int_{-\infty}^{t} e^{-(t-\tau)}x(\tau)d\tau \\<br />
+\mathbf{(i)} y[n] &amp;=&amp; \sum_{k=-\infty}^{n}(\tfrac{1}{2})^{n-k}x[k] \\<br />
+\mathbf{(j)} y(t) &amp;=&amp; \frac{dx(t)}{dt} \\<br />
+\mathbf{(k)} y[n] &amp;=&amp;
+\begin{cases}
+x[n+1] ,&amp; n\geq 0 \\<br />
+x[n], &amp; n\leq -1
+\end{cases}\\<br />
+\mathbf{(l)} y(t) &amp;=&amp; x(2t) \\<br />
+\mathbf{(m)} y[n] &amp;=&amp;  x[2n] \\<br />
+\mathbf{(n)} y[n] &amp;=&amp;
+\begin{cases}
+x[n/2], &amp; n\ \mathrm{even} \\<br />
+0, &amp; n\ \mathrm{odd}
+\end{cases}
+\end{eqnarray*}</p>
+
+<p></div></p>
+
+<p>A system is invertible if distinct inputs lead to distinct outputs. There exists
+an inverse system for an invertible system so that when cascaded with the
+original system, the output will be equal to the input to the original system.</p>
+
+<p><strong>Problem 1.30a</strong></p>
+
+<p>For system \(\mathbf{(a)}\), the output is the input delayed by \(4\), so the
+inverse system should be a system that advance the input by \(4\), i.e.</p>
+
+<p>\begin{equation*}
+y(t) = x(t+4)
+\end{equation*}</p>
+
+<p><strong>Problem 1.30b</strong></p>
+
+<p>For system \(\mathbf{(b)}\), \(\cos(t)\) is and periodic signal with fundamental
+period \(2\pi\) which means that
+different inputs will lead to one same output. So the system may not be invertible.</p>
+
+<p><strong>Problem 1.30c</strong></p>
+
+<p>\(\delta[n]\) and \(2\delta[n]\) lead to the same result. So the system is not invertible.</p>
+
+<p>The integration is invertible and the inverse system is</p>
+
+<p>\begin{equation*}
+y(t) = \frac{dx(t)}{dt}
+\end{equation*}</p>
+
+<p>Notice that the difference is not invertible like system \(\mathbf{(j)}\),
+because \(\frac{d(x(t) + t_{0})}{dt}\) will lead to the same result no matter
+what value \(t_{0}\) will be.</p>
+
+<p>Like system \(\mathbf{(a)}\), this discrete-time system is invertible and the
+inverse system is</p>
+
+<p>\begin{equation*}
+y[n]=
+    \begin{cases}
+    x[n+1], &amp; n\geq 1 \\<br />
+    0, &amp; n=0 \\<br />
+    x[n], &amp; n\leq -1
+    \end{cases} \\<br />
+\end{equation*}</p>
+
+<p><strong>Problem 1.30f</strong></p>
+
+<p>This system is not invertible. Let \(x[n] = \delta[n]\) and \(x[n] =
+\delta[n-1]\), we have the same output.</p>
+
+<p><strong>Problem 1.30g</strong></p>
+
+<p>\(y[n]\) is obtained by first flipping \(x[n]\) the right shifting the flipped
+signal by one. So we have the inverted system as \(y[n] = x[-n+1]\)</p>
+
+<p><strong>Problem 1.30h</strong></p>
+
+<p>The system is invertible and the inverse system is \(y(t)= x(t) + \frac{dx(t)}{dt}\)</p>
+
+<p><strong>Problem 1.30i</strong></p>
+
+<p>The system is invertible. First let&rsquo;s re-express the original system as:</p>
+
+<p>\begin{eqnarray*}
+y[n] &amp;=&amp; \sum_{k=-\infty}^{n}(\tfrac{1}{2})^{n-k}x[k] \\<br />
+&amp;=&amp; \sum_{k=-\infty}^{n-1} ( \frac{1}{2} )^{n-k} x[k]  + x[n]
+\end{eqnarray*}</p>
+
+<p>Then, we have \(x[n] = y[n] - \frac{1}{2}\sum_{k=-\infty}^{n-1} ( \frac{1}{2}
+)^{n-1-k} x[k] = y[n] - \frac{1}{2} y[n-1] \) So the inverse system is \( y[n]=
+x[n] - \frac{1}{2} x[n-1] \)
+ So the inverse system is \( y[n]= x[n] - \frac{1}{2} x[n-1] \).</p>
+
+<p><strong>Problem 1.30j</strong></p>
+
+<p>The system is not invertible because \(x(t)\) and \(x(t) + x_{0}\) will result
+the same \(y(t)\). \(x_{0}\) is a constant.</p>
+
+<p><strong>Problem 1.30k</strong></p>
+
+<p>The system is not invertible. \(\delta[n]\) and \(2\delta[n]\) will result in
+same result.</p>
+
+<p><strong>Problem 1.30l</strong></p>
+
+<p>The system is invertible and the inverse system is \( y(t) = x(\frac{1}{2}t)\).</p>
+
+<p><strong>Problem 2.30m</strong></p>
+
+<p>The system is not invertible. Notice this system is different with system
+\(\mathbf{(l)}\) which is continuous-time system. \(x[2n]\) is a downsampling of
+\(x[n]\). So there are tons of signals as \(x[n]\) which can be downsampling to
+get \(x[2n]\).</p>
+
+<p><strong>Problem 2.30n</strong></p>
+
+<p>The system is invertible and the system is \(y[n] = x[2n]\)</p>
+
+<h2 id="problem-1-dot-31"><span class="section-num">11</span> Problem 1.31</h2>
+
+<div class="prob" id="prob:1-31">
+  <div></div>
+
+<p>In this problem, we illustrate one of the most important consequences of the
+properties of linearity and time invariance. Specifically, once we know the
+response of a linear system or a linear time-invariant (LTI) system to a
+single input or the response to several inputs, we can directly compute the
+response to many other input signals. Much of the remainder of this book
+deals with a thorough exploitation of this fact in order to develop results
+and techniques for analyzing and synthesizing LTI systems.</p>
+
+<ol>
+<li>Consider an LTI system whose response to the signal \(x_{1}(t)\) in the
+following figure is the signal \(y_{1}(t)\). Determine and sketch
+carefully the response of the system to the input \(x_{2}(t)\) .</li>
+<li>Determine and sketch the response of the system considered in part (a) to
+the input \(x_{3}(t)\).</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-30.png" >
+<img src="/img/tikz/figProb1-30.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p></div></p>
+
+<p><strong>Problem 1.31a</strong></p>
+
+<p>Notice that \(x_{2}(t) = x_{1}(t) - x_{1}(t-2)\). Based on the properties of LTI
+system , we have \(y_{2}(t) = y_{1}(t) - y_{1}(t-2)\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-31a.png" >
+<img src="/img/tikz/figProb1-31a.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+<p>Notice that \(x_{3}(t) = x_{1}(t+1) + x_{1}(t)\).  So the output \(y_{3}(t)
+=y_{1}(t+1) + y_{1}(t)\).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="/img/tikz/figProb1-31b.png" >
+<img src="/img/tikz/figProb1-31b.png" alt="" width="80%" ></a>
+
+
+
+</figure>
+
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/signalsandsystemssolution/chapter-1-prolems-1-dot-1-to-1-dot-20/" rel="next">solution of chapter 1 problems 1.1-1.20</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/signalsandsystemssolution/chapter-1-basic-prolems/" rel="prev">solutions</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Feb 8, 2020</p>
+
+          
+
+
+          
+
+        </div>
+
+      </article>
+
+      
+
+
+<footer class="footer-section bg-with-black">
+    <div class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/logo2.png" alt="">
+                        <ul class="fta-list">
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Finacial Planning</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Investments Management</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Important Link</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Finacial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Taxes Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Contact Us</h3>
+                        <ul class="fta-list">
+                            <li>Address: 8th floor, 379 Hudson St, New York, NY 10018</li>
+                            <li>Phone: (+1) 96 716 6879</li>
+                            <li>Email: contact@site.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<footer>
+    
+
+    <p class="powered-by">
+        &copy; MSC, 2019-2020, All rights reserved &middot; 
+
+        
+    </p>
+
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js" integrity="sha256-0w92bcB21IY5+rGI84MGj52jNfHNbXVeQLrZ0CGdjNY=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/matlab.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/c.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/elisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/lisp.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/shell.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/latex.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key="></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.84d185001460a90007fb2f6dcc66616e.js"></script>
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         tex2jax: {
+             inlineMath: [['$','$'], ['\\(','\\)']] },
+         displayMath: [['$$','$$'], ['\\[','\\]']],
+         displayAlign: "center",
+         displayIndent: "0em",
+         "HTML-CSS": { scale: 100,
+                       linebreaks: { automatic: "false" },
+                       webFont: "TeX"
+         },
+         SVG: {scale: 100,
+               linebreaks: { automatic: "false" },
+               font: "TeX"},
+         NativeMML: {scale: 100},
+         TeX: { equationNumbers: {autoNumber: "AMS"},
+                MultLineWidth: "90%",
+                TagSide: "right",
+                TagIndent: ".8em"
+         }
+     });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

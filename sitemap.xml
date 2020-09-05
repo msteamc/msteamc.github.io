@@ -13,6 +13,16 @@
   </url>
   
   <url>
+    <loc>https://msteamc.github.io/courses/signalsandsystemssolution/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/signalsandsystemssolution/example4/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://msteamc.github.io/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
@@ -33,6 +43,21 @@
   </url>
   
   <url>
+    <loc>https://msteamc.github.io/courses/signalsandsystemssolution/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/signalsandsystemssolution/example3/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/signalsandsystemssolution/</loc>
+    <lastmod>2020-02-08T17:35:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://msteamc.github.io/faq/</loc>
     <lastmod>2019-11-26T00:00:00+00:00</lastmod>
   </url>
@@ -48,7 +73,7 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/project/how-do-i-make-a-video/</loc>
+    <loc>https://msteamc.github.io/project/project-how-do-i-make-a-video/</loc>
     <lastmod>2019-10-06T11:16:00+08:00</lastmod>
   </url>
   
@@ -83,7 +108,7 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/publication/preprint/</loc>
+    <loc>https://msteamc.github.io/publication/a-video-with-custom-link/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,22 +133,12 @@
   </url>
   
   <url>
+    <loc>https://msteamc.github.io/landing/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://msteamc.github.io/tags/course/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/project2/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/project1/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,58 +148,8 @@
   </url>
   
   <url>
-    <loc>https://msteamc.github.io/tags/inner-show/</loc>
+    <loc>https://msteamc.github.io/project/internal-project-with-course-tag/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/course1/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/course2/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/internal-course/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/project/project3/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/outer-show/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/signals-and-systems/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/publication_types/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/tags/post/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/authors/robert-ford/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -198,15 +163,20 @@
   </url>
   
   <url>
+    <loc>https://msteamc.github.io/authors/robert-ford/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://msteamc.github.io/courses/</loc>
+  </url>
+  
+  <url>
     <loc>https://msteamc.github.io/post/</loc>
   </url>
   
   <url>
     <loc>https://msteamc.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://msteamc.github.io/courses/</loc>
   </url>
   
 </urlset>
