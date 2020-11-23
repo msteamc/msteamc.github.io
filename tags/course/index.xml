@@ -5,12 +5,29 @@
     <link>https://msteamc.github.io/tags/course/</link>
       <atom:link href="https://msteamc.github.io/tags/course/index.xml" rel="self" type="application/rss+xml" />
     <description>course</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 09 Feb 2020 07:16:00 +0800</lastBuildDate>
     <image>
       <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>course</title>
       <link>https://msteamc.github.io/tags/course/</link>
     </image>
+    
+    <item>
+      <title>Solution Manual of Signals and Systems by Oppenheim etc.</title>
+      <link>https://msteamc.github.io/project/course-solution-manual-of-signals-and-systems-by-oppenheim/</link>
+      <pubDate>Sun, 09 Feb 2020 07:16:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/project/course-solution-manual-of-signals-and-systems-by-oppenheim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solution Manual for Signals and Systems by Oppenheim, Willsky and Nawab</title>
+      <link>https://msteamc.github.io/project/course-information-theory/</link>
+      <pubDate>Fri, 31 Jan 2020 14:43:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/project/course-information-theory/</guid>
+      <description>&lt;p&gt;this is the information theory&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Internal Project with course tag</title>

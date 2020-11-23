@@ -5,7 +5,7 @@
     <link>https://msteamc.github.io/tags/signalsandsystems/</link>
       <atom:link href="https://msteamc.github.io/tags/signalsandsystems/index.xml" rel="self" type="application/rss+xml" />
     <description>SignalsAndSystems</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sat, 15 Feb 2020 12:54:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Fri, 11 Sep 2020 07:06:00 +0800</lastBuildDate>
     <image>
       <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>SignalsAndSystems</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Signals and Systems Chapter 1 Problems Part 3 (1.32-1.47)</title>
       <link>https://msteamc.github.io/post/signals-and-systems-chapter-1-problems-part-3-1-dot-32-1-dot-47/</link>
-      <pubDate>Sat, 15 Feb 2020 12:54:00 +0800</pubDate>
+      <pubDate>Fri, 11 Sep 2020 07:06:00 +0800</pubDate>
       <guid>https://msteamc.github.io/post/signals-and-systems-chapter-1-problems-part-3-1-dot-32-1-dot-47/</guid>
       <description>
 
@@ -88,7 +88,7 @@ counterexample to it.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 1.32a&lt;/strong&gt; &lt;a id=&#34;org8cc6af0&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1.32a&lt;/strong&gt; &lt;a id=&#34;org8a384a2&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Let \(T\) be the fundamental period of \(x(t)\), then we have \(x(t+T) = x(t)\).
 So \( y_{1}(t) = x(2t) = x(2t + T) = x(2(t+ \frac{T}{2} ))=
@@ -99,10 +99,10 @@ speeded up version of \(x(t)\).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 1.32b&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Let \(T\) be the fundamental period of \(y_{1}(t)\), then based on the analysis
-of &lt;a href=&#34;#org8cc6af0&#34;&gt;Problem 1.32a&lt;/a&gt; , we have \(x(t)\) is a slowed down version of \(y_{1}(t)\),
+of &lt;a href=&#34;#org8a384a2&#34;&gt;Problem 1.32a&lt;/a&gt; , we have \(x(t)\) is a slowed down version of \(y_{1}(t)\),
 hense \(x(t)\) is periodic and has fundamental period \(2T\).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 1.32c&lt;/strong&gt; &lt;a id=&#34;org9e7b0a7&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1.32c&lt;/strong&gt; &lt;a id=&#34;org1f35b44&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Let \(T\) be the fundamental period of \(x(t)\), then we have \(x(t+T) = x(t)\).
 So \( y_{2}(t) = x(\tfrac{t}{2}) = x(\tfrac{t}{2} + T) = x(\frac{t+ 2T}{2})=
@@ -113,7 +113,7 @@ slowed down version of \(x(t)\).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem 1.32d&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Let \(T\) be the fundamental period of \(y_{2}(t)\), then based on the analysis
-of &lt;a href=&#34;#org9e7b0a7&#34;&gt;Problem 1.32c&lt;/a&gt; , we have \(x(t)\) is a speeded up version of \(y_{2}(t)\),
+of &lt;a href=&#34;#org1f35b44&#34;&gt;Problem 1.32c&lt;/a&gt; , we have \(x(t)\) is a speeded up version of \(y_{2}(t)\),
 hense \(x(t)\) is periodic and has fundamental period \(\frac{T}{2}\).&lt;/p&gt;
 
 &lt;h2 id=&#34;problem-1-dot-33&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; Problem 1.33&lt;/h2&gt;
@@ -191,7 +191,7 @@ of \(x[n]\). An example is given below:&lt;/p&gt;
 &lt;/figure&gt;
 
 
-&lt;p&gt;&lt;strong&gt;Problem 1.33c&lt;/strong&gt; &lt;a id=&#34;orgace4a36&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1.33c&lt;/strong&gt; &lt;a id=&#34;orgd7ada49&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;\(y_{2}[n]\) can treated as interpolation of \(x[n]\) with zero. So \(y_{2}[n]\)
 is periodic with fundamental period \(2N\) where \(N\) is fundamental period of
@@ -199,7 +199,7 @@ is periodic with fundamental period \(2N\) where \(N\) is fundamental period of
 
 &lt;p&gt;&lt;strong&gt;Problem 1.33d&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Based on analysis of &lt;a href=&#34;#orgace4a36&#34;&gt;Problem 1.33c&lt;/a&gt; , \(y_{2}[n]\) has fundamental period \(2N\)
+&lt;p&gt;Based on analysis of &lt;a href=&#34;#orgd7ada49&#34;&gt;Problem 1.33c&lt;/a&gt; , \(y_{2}[n]\) has fundamental period \(2N\)
 where \(N\) is the fundamental period of \(x[n]\).&lt;/p&gt;
 
 &lt;p&gt;Based on the fact that only integer is valid for the independent variable of
@@ -559,7 +559,7 @@ cross-correlation function.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 1.37a&lt;/strong&gt; &lt;a id=&#34;org1c2eb77&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1.37a&lt;/strong&gt; &lt;a id=&#34;org4ba917e&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;by the definition of correlation, we have&lt;/p&gt;
 
@@ -591,7 +591,7 @@ cross-correlation function.&lt;/p&gt;
 \phi_{oxx}(t) = \frac{\phi_{xx}(t) - \phi_{xx}(-t)}{2}
 \end{equation*}&lt;/p&gt;
 
-&lt;p&gt;Based on &lt;a href=&#34;#org1c2eb77&#34;&gt;Problem 1.37a&lt;/a&gt;, we have \( \phi_{xx}(t) = \phi_{xx}(-t) \) , so
+&lt;p&gt;Based on &lt;a href=&#34;#org4ba917e&#34;&gt;Problem 1.37a&lt;/a&gt;, we have \( \phi_{xx}(t) = \phi_{xx}(-t) \) , so
 \(\phi_{oxx}(t) = 0\). which means that \(\phi_{oxx}(t)\) is an even signal.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem 1.37c&lt;/strong&gt;&lt;/p&gt;
@@ -618,21 +618,18 @@ cross-correlation function.&lt;/p&gt;
   &lt;div&gt;&lt;/div&gt;
 
 &lt;p&gt;In this problem, we examine a few of the properties of the unit impulse
-function.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;show that&lt;/p&gt;
+function.
+a. show that&lt;/p&gt;
 
 &lt;p&gt;\begin{equation*}
 \delta(2t) = \frac{1}{2} \delta(t)
 \end{equation*}&lt;/p&gt;
 
-&lt;p&gt;Hint: Examine \(\delta_{\Delta}(t)\). (See Figure 1.34 in the textbook).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Section 1.4, we defined the continuous-time unit impulse as the limit
-of the signal \(\delta_{\Delta}(t)\). More precisely, we defined several
-of the properties of \(\delta(t)\) by examining the corresponding
-properties of \(\delta_{\Delta}(t)\). For example, since the signal&lt;/p&gt;
+&lt;p&gt;Hint: Examine \(\delta_{\Delta}(t)\). (See Figure 1.34 in the textbook).
+b. In Section 1.4, we defined the continuous-time unit impulse as the limit
+   of the signal \(\delta_{\Delta}(t)\). More precisely, we defined several
+   of the properties of \(\delta(t)\) by examining the corresponding
+   properties of \(\delta_{\Delta}(t)\). For example, since the signal&lt;/p&gt;
 
 &lt;p&gt;\begin{equation*}
 u_{\Delta}(t) = \int_{-\infty}^{t}\delta_{\Delta}(\tau)d\tau
@@ -709,12 +706,11 @@ also defined in terms of their properties rather than their values.&lt;/p&gt;
 
 
 &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a id=&#34;orgfae7e2e&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;org0729261&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -742,7 +738,7 @@ also defined in terms of their properties rather than their values.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem 1.38a&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Base on fig &lt;a href=&#34;#orgfae7e2e&#34;&gt;1&lt;/a&gt; , \(\delta(2t)\) can be visualized as follows&lt;/p&gt;
+&lt;p&gt;Base on fig &lt;a href=&#34;#org0729261&#34;&gt;1&lt;/a&gt; , \(\delta(2t)\) can be visualized as follows&lt;/p&gt;
 
 
 
@@ -1527,7 +1523,7 @@ the following statement:&lt;/p&gt;
 
 &lt;p&gt;For any time \(t_{0}\) and any input \(x(t)\) such that \(x(t) = 0\) for
 \(t&amp;lt;t_{0}\), the corresponding output \(y(t)\) must also be zero for \(t&amp;lt;
-          t_{0}\).&lt;/p&gt;
+       t_{0}\).&lt;/p&gt;
 
 &lt;p&gt;The analogous statement can be made for a discrete-time linear system.&lt;/p&gt;&lt;/li&gt;
 
@@ -1818,11 +1814,11 @@ y[3]&amp;amp;=&amp;amp; x[2] - y[2] = 1 \\&lt;br /&gt;
 &lt;li&gt;Let \(\mathcal{S}\) denote an incrementally linear system, and let
 \(x_{1}[n]\) be an arbitrary input signal to \(\mathcal{S}\) with
 corresponding output \(y_{1}[n]\).  Consider the system illustrated in
-Figure &lt;a href=&#34;#orgcc80d42&#34;&gt;1-47(a)&lt;/a&gt;.  Show that this system is linear and that, in fact, the overall
+Figure &lt;a href=&#34;#org299ab6f&#34;&gt;1-47(a)&lt;/a&gt;.  Show that this system is linear and that, in fact, the overall
 input-output relationship between \(x[n]\) and \(y[n]\) does not depend
 on the particular choice of \(x_{1}[n]\).&lt;/li&gt;
 &lt;li&gt;Use the result of part (a) to show that \(\mathcal{S}\) can be
-represented in the form shown in Figure  &lt;a href=&#34;#orga6af729&#34;&gt;1-48&lt;/a&gt; .&lt;/li&gt;
+represented in the form shown in Figure  &lt;a href=&#34;#orgbd9a3f9&#34;&gt;1-48&lt;/a&gt; .&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Which of the following systems are incrementally linear? Justify your
 answers, and if a system is incrementally linear, identify the linear
@@ -1852,18 +1848,18 @@ x[n] - x[n-1]  - 3, &amp;amp; \mathrm{if}\ x[0] &amp;lt; 0
 \end{cases}
 \end{equation*}&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The system depicted in Figure &lt;a href=&#34;#org3cfe201&#34;&gt;1-47(b)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The system depicted in Figure &lt;a href=&#34;#org4f32cd0&#34;&gt;1-47(b)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The system depicted in Figure  &lt;a href=&#34;#org7f9a6c5&#34;&gt;1-47&amp;copy;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The system depicted in Figure  &lt;a href=&#34;#org5b29e9d&#34;&gt;1-47&amp;copy;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Suppose that a particular incrementaly linear system has a representation
-as in figure  &lt;a href=&#34;#orga6af729&#34;&gt;1-48&lt;/a&gt;, with \(\mathcal{L}\) denoting the linear system and
+as in figure  &lt;a href=&#34;#orgbd9a3f9&#34;&gt;1-48&lt;/a&gt;, with \(\mathcal{L}\) denoting the linear system and
 \(y_{0}[n]\) the zero input reponse, Show that \(S\) is time invariant if
 and only if \(\mathcal{L}\) is a time-invariant system and \(y_{0}[n]\) is constant.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;a id=&#34;orgcc80d42&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;org299ab6f&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -1889,7 +1885,7 @@ and only if \(\mathcal{L}\) is a time-invariant system and \(y_{0}[n]\) is const
 &lt;/figure&gt;
 
 
-&lt;p&gt;&lt;a id=&#34;org3cfe201&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;org4f32cd0&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -1915,7 +1911,7 @@ and only if \(\mathcal{L}\) is a time-invariant system and \(y_{0}[n]\) is const
 &lt;/figure&gt;
 
 
-&lt;p&gt;&lt;a id=&#34;org7f9a6c5&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;org5b29e9d&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -1941,7 +1937,7 @@ and only if \(\mathcal{L}\) is a time-invariant system and \(y_{0}[n]\) is const
 &lt;/figure&gt;
 
 
-&lt;p&gt;&lt;a id=&#34;orga6af729&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;orgbd9a3f9&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -1971,7 +1967,7 @@ and only if \(\mathcal{L}\) is a time-invariant system and \(y_{0}[n]\) is const
 
 &lt;p&gt;&lt;strong&gt;Problem 1.47a&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;An incrementally linear system can be expressed as Figure &lt;a href=&#34;#orga6af729&#34;&gt;1-47d&lt;/a&gt; : a linear
+&lt;p&gt;An incrementally linear system can be expressed as Figure &lt;a href=&#34;#orgbd9a3f9&#34;&gt;1-47d&lt;/a&gt; : a linear
 system followed by another signal equal to the zero-input response of the
 system. Because \(\mathcal{S}\) is an incrementally linear system, the output
 \(y[n] = y^{&amp;lsquo;}[n] - y_{1}[n]\) where \(y^{&amp;lsquo;}[n]\) is the output of

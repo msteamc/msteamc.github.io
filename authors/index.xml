@@ -5,12 +5,28 @@
     <link>https://msteamc.github.io/authors/</link>
       <atom:link href="https://msteamc.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 06 Oct 2019 08:28:00 +0800</lastBuildDate>
     <image>
       <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>Authors</title>
       <link>https://msteamc.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>Eason Zhang</title>
+      <link>https://msteamc.github.io/authors/eason-zhang/</link>
+      <pubDate>Sun, 06 Oct 2019 08:28:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/authors/eason-zhang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eason Zhang2</title>
+      <link>https://msteamc.github.io/authors/eason-zhang2/</link>
+      <pubDate>Sun, 06 Oct 2019 08:28:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/authors/eason-zhang2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>

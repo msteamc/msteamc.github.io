@@ -5,7 +5,7 @@
     <link>https://msteamc.github.io/tags/outer-show/</link>
       <atom:link href="https://msteamc.github.io/tags/outer-show/index.xml" rel="self" type="application/rss+xml" />
     <description>outer-show</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2020</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 09 Feb 2020 10:29:00 +0800</lastBuildDate>
     <image>
       <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>outer-show</title>
@@ -13,11 +13,18 @@
     </image>
     
     <item>
-      <title>External Project link test</title>
-      <link>https://msteamc.github.io/project/project1/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://msteamc.github.io/project/project1/</guid>
-      <description></description>
+      <title>Solution Manual of Signals and Systems By Oppenheim</title>
+      <link>https://msteamc.github.io/project/project-solution-manual-of-signals-and-systems-by-oppenheim/</link>
+      <pubDate>Sun, 09 Feb 2020 10:29:00 +0800</pubDate>
+      <guid>https://msteamc.github.io/project/project-solution-manual-of-signals-and-systems-by-oppenheim/</guid>
+      <description>
+
+&lt;p&gt;This is the solution manual of signals and systems by Oppenheim &lt;sup id=&#34;c0c46d17244b557b9dd769aa5b81a771&#34;&gt;&lt;a href=&#34;#oppenheim_signals_1997&#34; title=&#34;Oppenheim, Signals and {Systems}, Prentice Hall (1997).&#34;&gt;oppenheim_signals_1997&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h1&gt;
+
+&lt;p&gt;&lt;a id=&#34;oppenheim_signals_1997&#34;&gt;&lt;/a&gt;[oppenheim_signals_1997] Oppenheim, Signals and Systems, Prentice Hall (1997). &lt;a href=&#34;#c0c46d17244b557b9dd769aa5b81a771&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
