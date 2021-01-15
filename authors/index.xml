@@ -5,7 +5,7 @@
     <link>https://msteamc.github.io/authors/</link>
       <atom:link href="https://msteamc.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2020, All rights reserved</copyright><lastBuildDate>Sun, 06 Oct 2019 08:28:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MSC, 2019-2021, All rights reserved</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://msteamc.github.io/img/icon-32.png</url>
       <title>Authors</title>
@@ -13,33 +13,21 @@
     </image>
     
     <item>
-      <title>Eason Zhang</title>
-      <link>https://msteamc.github.io/authors/eason-zhang/</link>
-      <pubDate>Sun, 06 Oct 2019 08:28:00 +0800</pubDate>
-      <guid>https://msteamc.github.io/authors/eason-zhang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Eason Zhang2</title>
-      <link>https://msteamc.github.io/authors/eason-zhang2/</link>
-      <pubDate>Sun, 06 Oct 2019 08:28:00 +0800</pubDate>
-      <guid>https://msteamc.github.io/authors/eason-zhang2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://msteamc.github.io/authors/admin/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       <guid>https://msteamc.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;MSC, Make STEAM Clear, is a project to show STEAM (Science, Technology, Engineering, Art and Mathematics ) in a visualized and animated way.&lt;/p&gt;
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
-&lt;p&gt;I hope you can be inspired by both the Youtube Channel and the contents from this site. In this site each video may relate several posts which detail the video by more references and examples.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
-&lt;p&gt;Any topics related with STEAM maybe covered. Please feel free to leave any comments. Now that I have a scratch about the blueprint of this project, modifications are absolutely possible because of your feedback.&lt;/p&gt;
+&lt;!-- MSC, Make STEAM Clear, is a project to show STEAM (Science, Technology, Engineering, Art and Mathematics ) in a visualized and animated way. --&gt;
 
-&lt;p&gt;At last, It&amp;rsquo;s my great pleasure to help you enjoy the beauty of STEAM.&lt;/p&gt;
+&lt;!-- I hope you can be inspired by both the Youtube Channel and the contents from this site. In this site each video may relate several posts which detail the video by more references and examples. --&gt;
+
+&lt;!-- Any topics related with STEAM maybe covered. Please feel free to leave any comments. Now that I have a scratch about the blueprint of this project, modifications are absolutely possible because of your feedback. --&gt;
+
+&lt;!-- At last, It&#39;s my great pleasure to help you enjoy the beauty of STEAM. --&gt;
 </description>
     </item>
     
